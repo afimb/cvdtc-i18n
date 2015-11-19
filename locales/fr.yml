@@ -1,10 +1,14 @@
 fr:
   flash:
     title:
+      alert: Alerte
+      error: Erreur
       notice: Information
   helpers:
     label:
       user:
+        current_password: Mot de passe actuel
         email: Courriel
         password: Mot de passe
         password_confirmation: Confirmation du mot de passe
+  my_account: Mon compte
