@@ -7,7 +7,7 @@ en:
   helpers:
     label:
       user:
-        current_password: 
+        current_password: Current password
         email: Email
         password: Password
         password_confirmation: Password confirmation

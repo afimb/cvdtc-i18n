@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'transit/validator/i18n/version'
+require 'transit-validator-i18n/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "transit-validator-i18n"
-  spec.version       = Transit::Validator::I18n::VERSION
+  spec.version       = TransitValidatorI18n::VERSION
   spec.authors       = ["Bruno Perles"]
   spec.email         = ["bruno@atnos.com"]
 
@@ -27,7 +27,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency "i18n"
+  spec.add_runtime_dependency "railties"
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency 'localeapp'
+  spec.add_development_dependency "localeapp"
 end
