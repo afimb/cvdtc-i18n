@@ -1,0 +1,10 @@
+fr:
+  flash:
+    title:
+      notice: Information
+  helpers:
+    label:
+      user:
+        email: Courriel
+        password: Mot de passe
+        password_confirmation: Confirmation du mot de passe
