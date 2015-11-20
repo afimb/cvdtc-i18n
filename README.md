@@ -5,7 +5,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'transit-validator-i18n', github: 'brunto/transit-validator-i18n'
+gem 'transit-validator-i18n', github: 'afimb/transit-validator-i18n'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/brunto/transit-validator-i18n.
+Bug reports and pull requests are welcome on GitHub at https://github.com/afimb/transit-validator-i18n.
 
 
 ## License
