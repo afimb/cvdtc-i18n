@@ -1,9 +1,9 @@
 require 'rails'
 
-module TransitValidatorI18n
+module CvdtcI18n
   class Railtie < ::Rails::Railtie #:nodoc:
-    initializer 'transit-validator-i18n' do |app|
-      TransitValidatorI18n::Railtie.instance_eval do
+    initializer 'cvdtc-i18n' do |app|
+      CvdtcI18n::Railtie.instance_eval do
         pattern = pattern_from app.config.i18n.available_locales
 
         add("locales/#{pattern}.yml")

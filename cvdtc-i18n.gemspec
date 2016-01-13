@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'transit-validator-i18n/version'
+require 'cvdtc-i18n/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "transit-validator-i18n"
-  spec.version       = TransitValidatorI18n::VERSION
+  spec.name          = "cvdtc-i18n"
+  spec.version       = CvdtcI18n::VERSION
   spec.authors       = ["Bruno Perles"]
   spec.email         = ["bruno@atnos.com"]
 
-  spec.summary       = 'Translations for transit-validator'
-  spec.description   = 'Translations for transit-validator'
-  spec.homepage      = 'https://github.com/brunto/transit-validator-i18n'
+  spec.summary       = 'Translations for cvdtc'
+  spec.description   = 'Translations for cvdtc'
+  spec.homepage      = 'https://github.com/brunto/cvdtc-i18n'
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
