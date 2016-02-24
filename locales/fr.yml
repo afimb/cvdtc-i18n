@@ -6,43 +6,47 @@ fr:
         file_md5: MD5 du fichier
         format: Format
         format_convert: Format de conversion
-        format_export: Format d'export
         iev_action: IEV Action
         ignore_end_chars: Ignorer les n derniers caractères
         ignore_last_word: Ignorer le dernier mot
         max_distance_for_commercial: Distance max pour créer les zones
         max_distance_for_connection_link: Distance max pour créer les correspondances
         name: Nom
-        prefix: Préfixe
+        object_id_prefix: Object id prefix
         time_zone: Fuseau horaire
-        uri: URI
         url: URL
+      link:
+        name: Name
+        url: Url
+      user:
+        confirmation_token: Token de confirmation
     errors:
       messages:
-        choose_file_or_uri: Fichier ou URI
         choose_file_or_url: Fichier ou URL
-        invalid_format_export: Format d'export invalide
     models:
       job: Tâche
       link: Lien
   complete: Complété
   convert: Convertir
   convert_gtfs: Convertir en GTFS
-  convert_neptune: 
-  convert_netex: 
+  convert_neptune: Convertir au format Neptune
+  convert_netex: Convertir au format NeTEx
   cvdtc: CVDTC
   devise:
     mailer:
       confirmation_instructions:
-        user_subject: 
-  edit_account: 
-  export: 
+        user_subject: Instructions de confirmation
+    shared:
+      links:
+        edit_account: Modifier mon compte
+        sign_out: Déconnexion
+  error_count: errors
   flash:
     title:
       alert: Alerte
       error: Erreur
       notice: Information
-  gtfs: 
+  gtfs: GTFS
   helpers:
     label:
       user:
@@ -52,157 +56,139 @@ fr:
         password_confirmation: Confirmation du mot de passe
     submit:
       job:
-        create: 
-  history: 
+        create: Create Tâche
+  history: Historique
   job:
-    cancel: 
+    cancel: Annuler
+    convert_from: Conversion de
+    convert_to: Conversion vers
     destroy:
       confirm: Merci de confirmer la suppression de cet élément
       title: 'Historique de mes validations :'
     status:
-      pending: 
-    unable_to_proceed: 
+      pending: En attente
+    unable_to_proceed: Traitement impossible
   jobs:
     index:
-      title: 
-    no_history: 
+      title: Titre
+    no_history: Aucun historique
+    progress: Progression
   my_account: Mon compte
-  neptune: 
-  netex: 
+  neptune: Neptune
+  netex: NeTEx
   report:
-    conform_lines: 
-    delete: 
-    download: 
-    nonconforming_lines: 
-    total_results: 
-    validation_ended_at: 
-  search: 
-  sidekiq: 
-  sign_out: 
+    conform_lines: Lignes conformes
+    convert_ended_at: Conversion terminée le
+    default_view:
+      files: Fichiers
+      lines: Lignes
+    delete: Supprimer
+    download: Télécharger
+    file:
+      column: Colonne
+      line: Ligne
+    nonconforming_lines: Lignes non conformes
+    total_results: Nombre de résultats
+    validation_ended_at: Validation terminée le
+  search: Search
+  search_form:
+    label:
+      search: Rechercher
+    placeholder: Search for...
+    submit: Submit
+  sidekiq: Sidekiq
   simple_form:
     error_notification:
-      job: 
+      job: 'Merci de corriger les erreurs ci-dessous :'
     hints:
       job:
         convert:
-          file: 
-          format: 
-          format_convert: 
-          ignore_end_chars: 
-          ignore_last_word: 
-          max_distance_for_commercial: 
-          max_distance_for_connection_link: 
-          prefix: 
-          time_zone: 
-          url: 
-        export:
-          file: 
-          format: 
-          format_export: 
-          uri: 
-          url: 
+          file: Fichier
+          format: Format
+          format_convert: Format de conversion
+          ignore_end_chars: Ignorer les n derniers caractères
+          ignore_last_word: Ignorer le dernier mot
+          max_distance_for_commercial: Distance max pour créer les zones
+          max_distance_for_connection_link: Distance max pour créer les correspondances
+          object_id_prefix: Préfixe d'identifiants
+          time_zone: Fuseau horaire
+          url: URL
         index:
-          file: 
-          file[]: 
-          format: 
-          format_export: 
+          file: Fichier
+          format: Format
           iev_action: 
           ignore_end_chars: 
           ignore_last_word: 
           max_distance_for_commercial: 
           max_distance_for_connection_link: 
-          prefix: 
           time_zone: 
-          uri: 
           url: 
         new:
           file: 
           format: 
-          format_export: 
           ignore_end_chars: 
           ignore_last_word: 
           max_distance_for_commercial: 
           max_distance_for_connection_link: 
-          prefix: 
-          uri: 
           url: 
     labels:
       job:
         convert:
-          file: 
-          format: 
-          format_convert: 
-          ignore_end_chars: 
-          ignore_last_word: 
-          max_distance_for_commercial: 
-          max_distance_for_connection_link: 
-          prefix: 
-          time_zone: 
-          url: 
-        export:
-          file: 
-          format: 
-          format_export: 
-          uri: 
-          url: 
+          file: Fichier
+          format: Format
+          format_convert: Format de conversion
+          ignore_end_chars: Ignorer les n derniers caractères
+          ignore_last_word: Ignorer le dernier mot
+          max_distance_for_commercial: Distance max pour créer les zones
+          max_distance_for_connection_link: Distance max pour créer les correspondances
+          object_id_prefix: Préfixe d'identifiants
+          time_zone: Fuseau horaire
+          url: URL
         index:
-          file: 
-          file[]: 
-          format: 
-          format_export: 
-          iev_action: 
-          ignore_end_chars: 
-          ignore_last_word: 
-          max_distance_for_commercial: 
-          max_distance_for_connection_link: 
-          prefix: 
-          time_zone: 
-          uri: 
-          url: 
+          file: File
+          file[]: Fichiers
+          format: Format
+          iev_action: Action
+          ignore_end_chars: Ignorer les n derniers caractères
+          ignore_last_word: Ignorer le dernier mot
+          max_distance_for_commercial: Distance max pour créer les zones
+          max_distance_for_connection_link: Distance max pour créer les correspondances
+          time_zone: Fuseau horaire
+          url: URL
         new:
-          file: 
-          format: 
-          format_export: 
-          ignore_end_chars: 
-          ignore_last_word: 
-          max_distance_for_commercial: 
-          max_distance_for_connection_link: 
-          prefix: 
-          uri: 
-          url: 
+          file: Fichier
+          format: Format
+          ignore_end_chars: Ignorer les n derniers caractères
+          ignore_last_word: Ignorer le dernier mot
+          max_distance_for_commercial: Distance max pour créer les zones
+          max_distance_for_connection_link: Distance max pour créer les correspondances
+          url: URL
     placeholders:
       job:
         convert:
-          ignore_end_chars: 
-          max_distance_for_commercial: 
-          max_distance_for_connection_link: 
-          prefix: 
-          url: 
-        export:
-          uri: 
-          url: 
+          ignore_end_chars: Ignorer les n derniers caractères
+          max_distance_for_commercial: Distance max pour créer les zones
+          max_distance_for_connection_link: Distance max pour créer les correspondances
+          object_id_prefix: Préfixe d'identifiants
+          url: URL
         index:
-          file: 
-          file[]: 
-          iev_action: 
-          ignore_end_chars: 
-          max_distance_for_commercial: 
-          max_distance_for_connection_link: 
-          prefix: 
-          uri: 
-          url: 
+          file: Fichier
+          file[]: FIchiers
+          iev_action: Action
+          ignore_end_chars: Ignorer les n derniers caractères
+          max_distance_for_commercial: Distance max pour créer les zones
+          max_distance_for_connection_link: Distance max pour créer les correspondances
+          url: URL
         new:
-          ignore_end_chars: 
-          max_distance_for_commercial: 
-          max_distance_for_connection_link: 
-          prefix: 
-          uri: 
-          url: 
+          ignore_end_chars: Ignorer les n derniers caractères
+          max_distance_for_commercial: Distance max pour créer les zones
+          max_distance_for_connection_link: Distance max pour créer les correspondances
+          url: URL
     required:
-      html: 
-      mark: 
-      text: 
-  submit: 
+      html: <abbr title="required">*</abbr>
+      mark: "*"
+      text: required
+  submit: Valider
   validate: Valider
   validation_report:
     details:

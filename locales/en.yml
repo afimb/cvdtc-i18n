@@ -6,43 +6,47 @@ en:
         file_md5: File md5
         format: Format
         format_convert: Format convert
-        format_export: Format export
         iev_action: Iev action
         ignore_end_chars: Ignore end chars
         ignore_last_word: Ignore last word
         max_distance_for_commercial: Max distance for commercial
         max_distance_for_connection_link: Max distance for connection link
         name: Name
-        prefix: Prefix
+        object_id_prefix: 
         time_zone: Time zone
-        uri: Uri
         url: Url
+      link:
+        name: 
+        url: 
+      user:
+        confirmation_token: Confirmation token
     errors:
       messages:
-        choose_file_or_uri: File or URI
         choose_file_or_url: File or URL
-        invalid_format_export: 'Invalid export format '
     models:
       job: Job
       link: Links
   complete: Complete
   convert: Convert
   convert_gtfs: Convert to GTFS
-  convert_neptune: 
-  convert_netex: 
+  convert_neptune: Convert to Neptune format
+  convert_netex: Convert to NeTEx format
   cvdtc: CVDTC
   devise:
     mailer:
       confirmation_instructions:
         user_subject: Confirmation instructions
-  edit_account: 
-  export: 
+    shared:
+      links:
+        edit_account: Edit my account
+        sign_out: Sign out
+  error_count: 
   flash:
     title:
       alert: Alert
       error: Error
       notice: Notice
-  gtfs: 
+  gtfs: GTFS
   helpers:
     label:
       user:
@@ -53,78 +57,79 @@ en:
     submit:
       job:
         create: Create Job
-  history: 
+  history: History
   job:
-    cancel: 
+    cancel: Cancel
+    convert_from: Convert from
+    convert_to: Convert to
     destroy:
       confirm: Thank you to confirm the deletion of this element
       title: 'History of my jobs:'
     status:
-      pending: 
-    unable_to_proceed: 
+      pending: Pending
+    unable_to_proceed: Unable to proceed
   jobs:
     index:
-      title: 
-    no_history: 
+      title: TItle
+    no_history: No history
+    progress: Progress
   my_account: My account
-  neptune: 
-  netex: 
+  neptune: Neptune
+  netex: NeTEx
   report:
-    conform_lines: 
-    delete: 
-    download: 
-    nonconforming_lines: 
-    total_results: 
+    conform_lines: Conform lines
+    convert_ended_at: Convert ended at
+    default_view:
+      files: Files
+      lines: Lines
+    delete: Delete
+    download: Download
+    file:
+      column: Column
+      line: Line
+    nonconforming_lines: Nonconforming lines
+    total_results: Total results
     validation_ended_at: 
   search: Search
+  search_form:
+    label:
+      search: 
+    placeholder: 
+    submit: 
   sidekiq: 
-  sign_out: 
   simple_form:
     error_notification:
       job: 'Please review the problems below:'
     hints:
       job:
         convert:
-          file: 
-          format: 
-          format_convert: 
+          file: File
+          format: Format
+          format_convert: Format convert
           ignore_end_chars: 
           ignore_last_word: 
           max_distance_for_commercial: 
           max_distance_for_connection_link: 
-          prefix: 
-          time_zone: 
-          url: 
-        export:
-          file: 
-          format: 
-          format_export: 
-          uri: 
+          object_id_prefix: 
+          time_zone: Time zone
           url: 
         index:
           file: 
-          file[]: 
           format: 
-          format_export: 
           iev_action: 
           ignore_end_chars: 
           ignore_last_word: 
           max_distance_for_commercial: 
           max_distance_for_connection_link: 
-          prefix: 
           time_zone: 
-          uri: 
           url: 
         new:
           file: 
           format: 
-          format_export: 
           ignore_end_chars: 
           ignore_last_word: 
           max_distance_for_commercial: 
           max_distance_for_connection_link: 
-          prefix: 
-          uri: 
           url: 
     labels:
       job:
@@ -136,39 +141,27 @@ en:
           ignore_last_word: 
           max_distance_for_commercial: 
           max_distance_for_connection_link: 
-          prefix: 
+          object_id_prefix: 
           time_zone: 
-          url: 
-        export:
-          file: 
-          format: 
-          format_export: 
-          uri: 
           url: 
         index:
           file: 
           file[]: 
           format: 
-          format_export: 
           iev_action: 
           ignore_end_chars: 
           ignore_last_word: 
           max_distance_for_commercial: 
           max_distance_for_connection_link: 
-          prefix: 
           time_zone: 
-          uri: 
           url: 
         new:
           file: 
           format: 
-          format_export: 
           ignore_end_chars: 
           ignore_last_word: 
           max_distance_for_commercial: 
           max_distance_for_connection_link: 
-          prefix: 
-          uri: 
           url: 
     placeholders:
       job:
@@ -176,10 +169,7 @@ en:
           ignore_end_chars: 
           max_distance_for_commercial: 
           max_distance_for_connection_link: 
-          prefix: 
-          url: 
-        export:
-          uri: 
+          object_id_prefix: 
           url: 
         index:
           file: 
@@ -188,21 +178,17 @@ en:
           ignore_end_chars: 
           max_distance_for_commercial: 
           max_distance_for_connection_link: 
-          prefix: 
-          uri: 
           url: 
         new:
           ignore_end_chars: 
           max_distance_for_commercial: 
           max_distance_for_connection_link: 
-          prefix: 
-          uri: 
           url: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
       text: required
-  submit: 
+  submit: Submit
   validate: Validate
   validation_report:
     details:
