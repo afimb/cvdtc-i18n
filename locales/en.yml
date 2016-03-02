@@ -2,10 +2,12 @@ en:
   activerecord:
     attributes:
       job:
+        created_at: 
         file: File
         file_md5: File md5
         format: Format
         format_convert: Format convert
+        id: 
         iev_action: Iev action
         ignore_end_chars: Ignore end chars
         ignore_last_word: Ignore last word
@@ -13,24 +15,99 @@ en:
         max_distance_for_connection_link: Max distance for connection link
         name: Name
         object_id_prefix: 
+        short_url: 
+        status: 
         time_zone: Time zone
+        updated_at: 
         url: Url
+        user: 
       link:
+        created_at: 
+        id: 
+        job: 
         name: 
+        updated_at: 
         url: 
       user:
+        authentication_token: 
+        confirmation_sent_at: 
         confirmation_token: Confirmation token
+        confirmed_at: 
+        created_at: 
+        current_sign_in_at: 
+        current_sign_in_ip: 
+        id: 
+        last_sign_in_at: 
+        last_sign_in_ip: 
+        name: 
+        remember_created_at: 
+        reset_password_sent_at: 
+        reset_password_token: 
+        role: 
+        sign_in_count: 
+        unconfirmed_email: 
+        updated_at: 
     errors:
       messages:
         choose_file_or_url: File or URL
     models:
       job: Job
       link: Links
+  admin:
+    actions:
+      bulk_delete:
+        bulk_link: 
+      dashboard:
+        breadcrumb: 
+        menu: 
+        title: 
+      delete:
+        menu: 
+      edit:
+        menu: 
+      export:
+        bulk_link: 
+        link: 
+        menu: 
+      index:
+        breadcrumb: 
+        menu: 
+        title: 
+      new:
+        menu: 
+      show:
+        breadcrumb: 
+        menu: 
+        title: 
+      show_in_app:
+        menu: 
+    form:
+      basic_info: 
+    home:
+      name: 
+    js: 
+    loading: 
+    misc:
+      add_filter: 
+      ago: 
+      bulk_menu_title: 
+      filter: 
+      filter_date_format: 
+      log_out: 
+      navigation: 
+      navigation_static_label: 
+      refresh: 
+    table_headers:
+      last_used: 
+      model_name: 
+      records: 
+    toggle_navigation: 
   complete: Complete
   convert: Convert
   convert_gtfs: Convert to GTFS
   convert_neptune: Convert to Neptune format
   convert_netex: Convert to NeTEx format
+  converted: 
   cvdtc: CVDTC
   devise:
     mailer:
@@ -40,7 +117,7 @@ en:
       links:
         edit_account: Edit my account
         sign_out: Sign out
-  error_count: 
+  error_count: errors
   flash:
     title:
       alert: Alert
@@ -56,21 +133,24 @@ en:
         password_confirmation: Password confirmation
     submit:
       job:
-        create: Create Job
+        create: Start
   history: History
   job:
     cancel: Cancel
     convert_from: Convert from
-    convert_to: Convert to
+    convert_to: to
     destroy:
       confirm: Thank you to confirm the deletion of this element
       title: 'History of my jobs:'
     status:
       pending: Pending
+    tab:
+      file: File
+      url: URL
     unable_to_proceed: Unable to proceed
   jobs:
     index:
-      title: TItle
+      title: 
     no_history: No history
     progress: Progress
   my_account: My account
@@ -78,7 +158,7 @@ en:
   netex: NeTEx
   report:
     conform_lines: Conform lines
-    convert_ended_at: Convert ended at
+    convert_ended_at: Convert ended
     default_view:
       files: Files
       lines: Lines
@@ -88,14 +168,14 @@ en:
       column: Column
       line: Line
     nonconforming_lines: Nonconforming lines
-    total_results: Total results
+    total_results: 'Total results:'
     validation_ended_at: 
   search: Search
   search_form:
     label:
       search: 
     placeholder: 
-    submit: 
+    submit: Search
   sidekiq: 
   simple_form:
     error_notification:
@@ -103,33 +183,20 @@ en:
     hints:
       job:
         convert:
-          file: File
-          format: Format
-          format_convert: Format convert
+          file: 
+          format: 
+          format_convert: 
           ignore_end_chars: 
           ignore_last_word: 
           max_distance_for_commercial: 
           max_distance_for_connection_link: 
           object_id_prefix: 
-          time_zone: Time zone
+          time_zone: 
           url: 
         index:
           file: 
           format: 
           iev_action: 
-          ignore_end_chars: 
-          ignore_last_word: 
-          max_distance_for_commercial: 
-          max_distance_for_connection_link: 
-          time_zone: 
-          url: 
-        new:
-          file: 
-          format: 
-          ignore_end_chars: 
-          ignore_last_word: 
-          max_distance_for_commercial: 
-          max_distance_for_connection_link: 
           url: 
     labels:
       job:
@@ -190,6 +257,7 @@ en:
       text: required
   submit: Submit
   validate: Validate
+  validated: 
   validation_report:
     details:
       1-GTFS-CSV-1: 
@@ -576,3 +644,4 @@ en:
       detail_4_vehiclejourney_1_pattern: 
       detail_4_vehiclejourney_1_unique: 
       detail_4_vehiclejourney_2: 
+  want_to_cancel_your_account: You want to cancel your account?

@@ -2,35 +2,112 @@ fr:
   activerecord:
     attributes:
       job:
+        created_at: Created at
         file: Fichier
         file_md5: MD5 du fichier
         format: Format
         format_convert: Format de conversion
+        id: Id
         iev_action: IEV Action
         ignore_end_chars: Ignorer les n derniers caractères
         ignore_last_word: Ignorer le dernier mot
-        max_distance_for_commercial: Distance max pour créer les zones
-        max_distance_for_connection_link: Distance max pour créer les correspondances
+        max_distance_for_commercial: Distance max pour produire les zones (en mètre)
+        max_distance_for_connection_link: Distance max pour produire les correspondances (en mètre)
         name: Nom
         object_id_prefix: Object id prefix
+        short_url: Short url
+        status: Status
         time_zone: Fuseau horaire
+        updated_at: Updated at
         url: URL
+        user: User
       link:
+        created_at: Created at
+        id: Id
+        job: Job
         name: Name
+        updated_at: Updated at
         url: Url
       user:
+        authentication_token: Authentication token
+        confirmation_sent_at: Confirmation sent at
         confirmation_token: Token de confirmation
+        confirmed_at: Confirmed at
+        created_at: Created at
+        current_sign_in_at: Current sign in at
+        current_sign_in_ip: Current sign in ip
+        id: Id
+        last_sign_in_at: Last sign in at
+        last_sign_in_ip: Last sign in ip
+        name: Name
+        remember_created_at: Remember created at
+        reset_password_sent_at: Reset password sent at
+        reset_password_token: Reset password token
+        role: Role
+        sign_in_count: Sign in count
+        unconfirmed_email: Unconfirmed email
+        updated_at: Updated at
     errors:
       messages:
         choose_file_or_url: Fichier ou URL
     models:
       job: Tâche
       link: Lien
+  admin:
+    actions:
+      bulk_delete:
+        bulk_link: 
+      dashboard:
+        breadcrumb: 
+        menu: 
+        title: 
+      delete:
+        menu: 
+      edit:
+        menu: 
+      export:
+        bulk_link: 
+        link: 
+        menu: 
+      index:
+        breadcrumb: 
+        menu: 
+        title: 
+      new:
+        menu: 
+      show:
+        breadcrumb: 
+        menu: 
+        title: 
+      show_in_app:
+        menu: 
+    form:
+      basic_info: 
+    home:
+      name: 
+    js: 
+    loading: 
+    misc:
+      add_filter: 
+      ago: 
+      bulk_menu_title: 
+      filter: 
+      filter_date_format: mm/dd/yy
+      log_out: 
+      navigation: 
+      navigation_static_label: 
+      refresh: 
+    table_headers:
+      last_used: 
+      model_name: 
+      records: 
+    toggle_navigation: 
   complete: Complété
   convert: Convertir
   convert_gtfs: Convertir en GTFS
   convert_neptune: Convertir au format Neptune
   convert_netex: Convertir au format NeTEx
+  converted: 
   cvdtc: CVDTC
   devise:
     mailer:
@@ -40,7 +117,7 @@ fr:
       links:
         edit_account: Modifier mon compte
         sign_out: Déconnexion
-  error_count: errors
+  error_count: erreurs
   flash:
     title:
       alert: Alerte
@@ -56,21 +133,24 @@ fr:
         password_confirmation: Confirmation du mot de passe
     submit:
       job:
-        create: Create Tâche
+        create: Démarrer
   history: Historique
   job:
     cancel: Annuler
     convert_from: Conversion de
-    convert_to: Conversion vers
+    convert_to: vers
     destroy:
       confirm: Merci de confirmer la suppression de cet élément
       title: 'Historique de mes validations :'
     status:
       pending: En attente
+    tab:
+      file: Fichier
+      url: URL
     unable_to_proceed: Traitement impossible
   jobs:
     index:
-      title: Titre
+      title: Historique de mes validations/conversions
     no_history: Aucun historique
     progress: Progression
   my_account: Mon compte
@@ -78,7 +158,7 @@ fr:
   netex: NeTEx
   report:
     conform_lines: Lignes conformes
-    convert_ended_at: Conversion terminée le
+    convert_ended_at: Conversion terminée
     default_view:
       files: Fichiers
       lines: Lignes
@@ -88,14 +168,14 @@ fr:
       column: Colonne
       line: Ligne
     nonconforming_lines: Lignes non conformes
-    total_results: Nombre de résultats
-    validation_ended_at: Validation terminée le
+    total_results: 'Nombre de résultats :'
+    validation_ended_at: Validation terminée
   search: Search
   search_form:
     label:
       search: Rechercher
     placeholder: Search for...
-    submit: Submit
+    submit: Filtrer
   sidekiq: Sidekiq
   simple_form:
     error_notification:
@@ -103,34 +183,21 @@ fr:
     hints:
       job:
         convert:
-          file: Fichier
-          format: Format
-          format_convert: Format de conversion
-          ignore_end_chars: Ignorer les n derniers caractères
-          ignore_last_word: Ignorer le dernier mot
-          max_distance_for_commercial: Distance max pour créer les zones
-          max_distance_for_connection_link: Distance max pour créer les correspondances
-          object_id_prefix: Préfixe d'identifiants
-          time_zone: Fuseau horaire
-          url: URL
+          file: Spécifier un fichier ZIP à convertir
+          format: Spécifier le format du fichier à convertir
+          format_convert: Spécifier le format de conversion
+          ignore_end_chars: Lors de la comparaison des noms d’arrêts, cette option permet de ne pas prendre en compte les derniers caractères du nom de l’arrêt (sauf si celui-ci n’a pas assez de caractères pour cela)
+          ignore_last_word: Lors de la comparaison des noms d’arrêts, cette option permet de ne pas prendre en compte le dernier mot du nom de l’arrêt (sauf si celui-ci n’est composé que d’un seul mot).
+          max_distance_for_commercial: Distance maximale entre deux arrêts homonymes pour les regrouper au sein d’un arrêt commercial de même nom, ces zones viennent en supplément de celles définies dans GTFS, une distance de 0 ne génère aucune zone.
+          max_distance_for_connection_link: Distance maximale entre deux arrêts pour les lier par une correspondance, ces correspondances sont hors zone d’arrêt. Elles viennent en supplément de celles définies dans GTFS (ce mécanisme tient compte des correspondances exclues), une distance de 0 ne génère aucune correspondance.
+          object_id_prefix: 
+          time_zone: Spécifier votre fuseau horaire
+          url: Spécifier une URL vers un fichier ZIP à importer pour conversion
         index:
-          file: Fichier
-          format: Format
+          file: Ajouter un fichier ZIP
+          format: Spécifier le format du fichier
           iev_action: 
-          ignore_end_chars: 
-          ignore_last_word: 
-          max_distance_for_commercial: 
-          max_distance_for_connection_link: 
-          time_zone: 
-          url: 
-        new:
-          file: 
-          format: 
-          ignore_end_chars: 
-          ignore_last_word: 
-          max_distance_for_commercial: 
-          max_distance_for_connection_link: 
-          url: 
+          url: Spécifier une URL vers un fichier ZIP à importer pour validation
     labels:
       job:
         convert:
@@ -139,13 +206,13 @@ fr:
           format_convert: Format de conversion
           ignore_end_chars: Ignorer les n derniers caractères
           ignore_last_word: Ignorer le dernier mot
-          max_distance_for_commercial: Distance max pour créer les zones
+          max_distance_for_commercial: Distance max pour produire les zones (en mètre)
           max_distance_for_connection_link: Distance max pour créer les correspondances
           object_id_prefix: Préfixe d'identifiants
           time_zone: Fuseau horaire
           url: URL
         index:
-          file: File
+          file: Fichier
           file[]: Fichiers
           format: Format
           iev_action: Action
@@ -160,7 +227,7 @@ fr:
           format: Format
           ignore_end_chars: Ignorer les n derniers caractères
           ignore_last_word: Ignorer le dernier mot
-          max_distance_for_commercial: Distance max pour créer les zones
+          max_distance_for_commercial: Distance max pour produire les arrêts commerciaux (en mètre)
           max_distance_for_connection_link: Distance max pour créer les correspondances
           url: URL
     placeholders:
@@ -190,6 +257,7 @@ fr:
       text: required
   submit: Valider
   validate: Valider
+  validated: 
   validation_report:
     details:
       1-GTFS-CSV-1: Contrôle de la lecture du fichier
@@ -576,3 +644,4 @@ fr:
       detail_4_vehiclejourney_1_pattern: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
       detail_4_vehiclejourney_1_unique: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) a une valeur partagée avec la course %{target_0_label} (%{target_0_objectid})
       detail_4_vehiclejourney_2: La course %{source_label} (%{source_objectid}) a un mode de transport interdit %{error_value}
+  want_to_cancel_your_account: You want to cancel your account?
