@@ -50,6 +50,7 @@ fr:
     errors:
       messages:
         choose_file_or_url: Fichier ou URL
+        invalid_format_convert: Format de conversion invalide
     models:
       job: Tâche
       link: Lien
@@ -103,11 +104,15 @@ fr:
       records: 
     toggle_navigation: 
   complete: Complété
+  compliance_check_result:
+    severities:
+      error_txt: Erreur
+      warning_txt: Alerte
   convert: Convertir
   convert_gtfs: Convertir en GTFS
   convert_neptune: Convertir au format Neptune
   convert_netex: Convertir au format NeTEx
-  converted: 
+  converted: Converted
   cvdtc: CVDTC
   devise:
     mailer:
@@ -198,6 +203,17 @@ fr:
           format: Spécifier le format du fichier
           iev_action: 
           url: Spécifier une URL vers un fichier ZIP à importer pour validation
+        new:
+          file: 
+          format: 
+          format_convert: 
+          ignore_end_chars: 
+          ignore_last_word: 
+          max_distance_for_commercial: 
+          max_distance_for_connection_link: 
+          object_id_prefix: 
+          time_zone: 
+          url: 
     labels:
       job:
         convert:
@@ -225,10 +241,13 @@ fr:
         new:
           file: Fichier
           format: Format
+          format_convert: 
           ignore_end_chars: Ignorer les n derniers caractères
           ignore_last_word: Ignorer le dernier mot
           max_distance_for_commercial: Distance max pour produire les arrêts commerciaux (en mètre)
           max_distance_for_connection_link: Distance max pour créer les correspondances
+          object_id_prefix: 
+          time_zone: 
           url: URL
     placeholders:
       job:
@@ -250,6 +269,7 @@ fr:
           ignore_end_chars: Ignorer les n derniers caractères
           max_distance_for_commercial: Distance max pour créer les zones
           max_distance_for_connection_link: Distance max pour créer les correspondances
+          object_id_prefix: 
           url: URL
     required:
       html: <abbr title="required">*</abbr>
@@ -257,7 +277,7 @@ fr:
       text: required
   submit: Valider
   validate: Valider
-  validated: 
+  validated: Validated
   validation_report:
     details:
       1-GTFS-CSV-1: Contrôle de la lecture du fichier

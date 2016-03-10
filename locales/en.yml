@@ -50,6 +50,7 @@ en:
     errors:
       messages:
         choose_file_or_url: File or URL
+        invalid_format_convert: 
     models:
       job: Job
       link: Links
@@ -103,6 +104,10 @@ en:
       records: 
     toggle_navigation: 
   complete: Complete
+  compliance_check_result:
+    severities:
+      error_txt: Error
+      warning_txt: Warning
   convert: Convert
   convert_gtfs: Convert to GTFS
   convert_neptune: Convert to Neptune format
@@ -198,6 +203,17 @@ en:
           format: 
           iev_action: 
           url: 
+        new:
+          file: 
+          format: 
+          format_convert: 
+          ignore_end_chars: 
+          ignore_last_word: 
+          max_distance_for_commercial: 
+          max_distance_for_connection_link: 
+          object_id_prefix: 
+          time_zone: 
+          url: 
     labels:
       job:
         convert:
@@ -225,10 +241,13 @@ en:
         new:
           file: 
           format: 
+          format_convert: 
           ignore_end_chars: 
           ignore_last_word: 
           max_distance_for_commercial: 
           max_distance_for_connection_link: 
+          object_id_prefix: 
+          time_zone: 
           url: 
     placeholders:
       job:
@@ -250,6 +269,7 @@ en:
           ignore_end_chars: 
           max_distance_for_commercial: 
           max_distance_for_connection_link: 
+          object_id_prefix: 
           url: 
     required:
       html: <abbr title="required">*</abbr>
