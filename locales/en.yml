@@ -106,7 +106,10 @@ en:
   complete: Complete
   compliance_check_result:
     severities:
+      WARNING_txt: 
+      alert_txt: 
       error_txt: Error
+      valid_txt: 
       warning_txt: Warning
   convert: Convert
   convert_gtfs: Convert to GTFS
@@ -174,6 +177,8 @@ en:
       line: Line
     nonconforming_lines: Nonconforming lines
     total_results: 'Total results:'
+    total_results_files: 
+    total_results_lines: 
     validation_ended_at: 
   search: Search
   search_form:
@@ -448,6 +453,7 @@ en:
       4-Timetable-1: 
       4-VehicleJourney-1: 
       4-VehicleJourney-2: 
+      detail_: 
       detail_1_gtfs_calendar_1: 
       detail_1_gtfs_calendar_2: 
       detail_1_gtfs_common_1: 
@@ -665,3 +671,4 @@ en:
       detail_4_vehiclejourney_1_unique: 
       detail_4_vehiclejourney_2: 
   want_to_cancel_your_account: You want to cancel your account?
+  warning_count: 
