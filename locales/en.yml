@@ -1,4 +1,5 @@
 en:
+  State: State
   activerecord:
     attributes:
       job:
@@ -106,10 +107,8 @@ en:
   complete: Complete
   compliance_check_result:
     severities:
-      WARNING_txt: 
-      alert_txt: 
       error_txt: Error
-      valid_txt: 
+      ok_txt: Ok
       warning_txt: Warning
   convert: Convert
   convert_gtfs: Convert to GTFS
@@ -126,6 +125,8 @@ en:
         edit_account: Edit my account
         sign_out: Sign out
   error_count: errors
+  errors:
+    connection_refused: 
   flash:
     title:
       alert: Alert
@@ -180,12 +181,12 @@ en:
     total_results_files: 
     total_results_lines: 
     validation_ended_at: 
-  search: Search
   search_form:
     label:
-      search: 
-    placeholder: 
-    submit: Search
+      search: Search
+      state: State
+    placeholder: Search for...
+    submit: Filter
   sidekiq: 
   simple_form:
     error_notification:
@@ -280,6 +281,7 @@ en:
       html: <abbr title="required">*</abbr>
       mark: "*"
       text: required
+  state: 
   submit: Submit
   validate: Validate
   validated: 

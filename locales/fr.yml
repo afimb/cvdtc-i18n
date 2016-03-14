@@ -1,4 +1,5 @@
 fr:
+  State: État
   activerecord:
     attributes:
       job:
@@ -106,10 +107,8 @@ fr:
   complete: Complété
   compliance_check_result:
     severities:
-      WARNING_txt: 
-      alert_txt: 
       error_txt: Erreur
-      valid_txt: 
+      ok_txt: Ok
       warning_txt: Alerte
   convert: Convertir
   convert_gtfs: Convertir en GTFS
@@ -126,6 +125,8 @@ fr:
         edit_account: Modifier mon compte
         sign_out: Déconnexion
   error_count: erreurs
+  errors:
+    connection_refused: 
   flash:
     title:
       alert: Alerte
@@ -180,11 +181,11 @@ fr:
     total_results_files: 'Nombre de fichiers traités :'
     total_results_lines: 'Nombre de lignes traitées :'
     validation_ended_at: Validation terminée
-  search: Search
   search_form:
     label:
       search: Rechercher
-    placeholder: Search for...
+      state: État
+    placeholder: Rechercher...
     submit: Filtrer
   sidekiq: Sidekiq
   simple_form:
@@ -280,6 +281,7 @@ fr:
       html: <abbr title="required">*</abbr>
       mark: "*"
       text: required
+  state: 
   submit: Valider
   validate: Valider
   validated: Validated
