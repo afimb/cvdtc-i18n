@@ -1,5 +1,4 @@
 fr:
-  State: État
   activerecord:
     attributes:
       job:
@@ -281,7 +280,6 @@ fr:
       html: <abbr title="required">*</abbr>
       mark: "*"
       text: required
-  state: 
   submit: Valider
   validate: Valider
   validated: Validated
