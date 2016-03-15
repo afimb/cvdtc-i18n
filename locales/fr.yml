@@ -107,7 +107,9 @@ fr:
   compliance_check_result:
     severities:
       error_txt: Erreur
+      ignored_txt: Ignoré
       ok_txt: Ok
+      success_txt: Succès
       warning_txt: Alerte
   convert: Convertir
   convert_gtfs: Convertir en GTFS
@@ -125,7 +127,7 @@ fr:
         sign_out: Déconnexion
   error_count: erreurs
   errors:
-    connection_refused: 
+    connection_refused: Connexion refusé
   flash:
     title:
       alert: Alerte

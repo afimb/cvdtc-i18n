@@ -107,7 +107,9 @@ en:
   compliance_check_result:
     severities:
       error_txt: Error
+      ignored_txt: Ignored
       ok_txt: Ok
+      success_txt: Success
       warning_txt: Warning
   convert: Convert
   convert_gtfs: Convert to GTFS
