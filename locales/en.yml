@@ -103,6 +103,7 @@ en:
       model_name: 
       records: 
     toggle_navigation: 
+  api: 
   complete: Complete
   compliance_check_result:
     details:
@@ -489,6 +490,10 @@ en:
       detail_4_vehiclejourney_1_unique: Attribute %{reference_value} of journey %{source_label} (%{source_objectid}) has the same value as that of journey %{target_0_label} (%{target_0_objectid})
       detail_4_vehiclejourney_2: Journey %{source_label} (%{source_objectid}) transport mode is invalid %{error_value}
     severities:
+      ERROR_txt: 
+      IGNORED_txt: 
+      OK_txt: 
+      _txt: 
       error_txt: Error
       ignored_txt: Ignored
       ok_txt: Ok
@@ -498,6 +503,7 @@ en:
   convert_gtfs: Convert to GTFS
   convert_neptune: Convert to Neptune format
   convert_netex: Convert to NeTEx format
+  convert_to: 
   converted: Converted
   cvdtc: CVDTC
   devise:
@@ -508,7 +514,7 @@ en:
       links:
         edit_account: Edit my account
         sign_out: Sign out
-  error_count: errors
+  error_count: error(s)
   errors:
     connection_refused: 
   flash:
@@ -564,6 +570,12 @@ en:
     total_results_files: 
     total_results_lines: 
     validation_ended_at: 
+  report_results:
+    icons:
+      title:
+        ERROR_txt: 
+        IGNORED_txt: 
+        OK_txt: 
   search_form:
     label:
       search: Search
@@ -667,6 +679,6 @@ en:
   submit: Submit
   to: to
   validate: Validate
-  validated:
+  validated: 
   want_to_cancel_your_account: You want to cancel your account?
-  warning_count: 
+  warning_count: warning(s)
