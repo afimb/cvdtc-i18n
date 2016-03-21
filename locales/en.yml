@@ -534,6 +534,21 @@ en:
       job:
         create: Start
   history: History
+  iev:
+    errors:
+      duplicate_or_missing_data: 
+      duplicate_parameters: 
+      internal_error: 
+      invalid_file_format: 
+      invalid_parameters: 
+      invalid_request: 
+      missing_parameters: 
+      scheduled_job: 
+      unknown_action: 
+      unknown_file: 
+      unknown_job: 
+      unknown_referential: 
+      unreadable_parameters: 
   job:
     cancel: Cancel
     convert_from: Convert from

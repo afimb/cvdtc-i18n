@@ -534,6 +534,21 @@ fr:
       job:
         create: Démarrer
   history: Historique
+  iev:
+    errors:
+      duplicate_or_missing_data: Donnée manquante ou en double
+      duplicate_parameters: Paramètres fournis en double
+      internal_error: Erreur interne
+      invalid_file_format: Format de fichier invalide
+      invalid_parameters: Paramètres d'action incorrects
+      invalid_request: Requête invalide
+      missing_parameters: Paramètres d'action manquants
+      scheduled_job: Méthode interdite sur un job non terminé
+      unknown_action: Action ou type inconnu
+      unknown_file: Fichier inconnu
+      unknown_job: Numéro de job inconnu
+      unknown_referential: Référentiel inconnu
+      unreadable_parameters: Paramètres non lisibles (format erroné)
   job:
     cancel: Annuler
     convert_from: Conversion de
@@ -600,7 +615,7 @@ fr:
           time_zone: Spécifier votre fuseau horaire
           url: Spécifier une URL vers un fichier ZIP à importer pour conversion
         index:
-          file: Ajouter un fichier ZIP
+          file: 'Ajouter un fichier ZIP (max: 8Mo)'
           format: Spécifier le format du fichier
           iev_action: 
           url: Spécifier une URL vers un fichier ZIP à importer pour validation
