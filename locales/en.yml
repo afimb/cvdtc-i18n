@@ -103,7 +103,7 @@ en:
       model_name: 
       records: 
     toggle_navigation: 
-  api: 
+  api: API
   complete: Complete
   compliance_check_result:
     details:
@@ -505,6 +505,14 @@ en:
   convert_netex: Convert to NeTEx format
   convert_to: 
   converted: Converted
+  count_errors:
+    one: 1 error
+    other: "%{count} errors"
+    zero: 0 error
+  count_warnings:
+    one: 1 warning
+    other: "%{count} warnings"
+    zero: 0 warning
   cvdtc: CVDTC
   devise:
     mailer:
@@ -514,7 +522,6 @@ en:
       links:
         edit_account: Edit my account
         sign_out: Sign out
-  error_count: error(s)
   errors:
     connection_refused: 
   flash:
@@ -696,4 +703,3 @@ en:
   validate: Validate
   validated: 
   want_to_cancel_your_account: You want to cancel your account?
-  warning_count: warning(s)

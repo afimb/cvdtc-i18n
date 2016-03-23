@@ -103,7 +103,7 @@ fr:
       model_name: 
       records: 
     toggle_navigation: 
-  api: Job id.
+  api: API
   complete: Complété
   compliance_check_result:
     details:
@@ -505,6 +505,14 @@ fr:
   convert_netex: Convertir au format NeTEx
   convert_to: 
   converted: Conversion
+  count_errors:
+    one: 1 erreur
+    other: "%{count} erreurs"
+    zero: 0 erreur
+  count_warnings:
+    one: 1 alerte
+    other: "%{count} alertes"
+    zero: 0 alerte
   cvdtc: CVDTC
   devise:
     mailer:
@@ -514,7 +522,6 @@ fr:
       links:
         edit_account: Modifier mon compte
         sign_out: Déconnexion
-  error_count: erreur(s)
   errors:
     connection_refused: Connexion refusé
   flash:
@@ -696,4 +703,3 @@ fr:
   validate: Valider
   validated: Validation
   want_to_cancel_your_account: You want to cancel your account?
-  warning_count: alerte(s)
