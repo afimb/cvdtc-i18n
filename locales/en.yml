@@ -105,174 +105,177 @@ en:
     toggle_navigation: 
   api: API
   complete: Complete
-  compliance_check_result:
+  compliance_check_results:
     details:
-      1-GTFS-CSV-1: Valid .zip Archive and files
-      1-GTFS-CSV-2: Valid UTF-8 CSV header line
-      1-GTFS-CSV-3: Presence of header
-      1-GTFS-CSV-4: Valid header definition
-      1-GTFS-CSV-5: Valid UTF-8 CSV data line
-      1-GTFS-CSV-6: No HTML tags
-      1-GTFS-CSV-7: No header/trailer spaces
-      1-GTFS-Calendar-1: 'At least one weekday '
-      1-GTFS-Calendar-2: end_date after start_date
-      1-GTFS-Common-1: Required files are present
-      1-GTFS-Common-10: 'Presence of agency_id '
-      1-GTFS-Common-11: Unknown columns
-      1-GTFS-Common-12: Data in Required columns
-      1-GTFS-Common-13: Data in agency_id in case of several agencies
-      1-GTFS-Common-14: Data in agency_id
-      1-GTFS-Common-15: Conditional values for arrival and departure times, transfer_times
-      1-GTFS-Common-16: Valid data types
-      1-GTFS-Common-2: Presence of calendar_dates and/or calendars
-      1-GTFS-Common-3: Check for optional files
-      1-GTFS-Common-4: Presence of other files
-      1-GTFS-Common-5: Presence of data in files
-      1-GTFS-Common-6: Presence of data in calendar files
-      1-GTFS-Common-7: Presence of data in optional files
-      1-GTFS-Common-8: Unique Identifiers
-      1-GTFS-Common-9: Presence of Required columns
-      1-GTFS-Route-1: Presence of column route_short_name or else route_long_name
-      1-GTFS-Route-2: Presence of data for route_short_name or else route_long_name
+      1-GTFS-CSV-1: Contrôle de la lecture du fichier
+      1-GTFS-CSV-2: Contrôle de la syntaxe d'une ligne
+      1-GTFS-CSV-3: Contrôle de la syntaxe des entêtes
+      1-GTFS-CSV-4: Contrôle de la non présence de doublons dans les entêtes
+      1-GTFS-CSV-5: Contrôle de la syntaxe CSV GTFS du fichier
+      1-GTFS-CSV-6: Contrôle de la non présence de balise HTML
+      1-GTFS-CSV-7: Contrôle de la non présence d'espace en début ou fin de colonne
+      1-GTFS-Calendar-1: 'Contrôle de la présence d''au moins un jour d''application '
+      1-GTFS-Calendar-2: Contrôle de la chronologie des dates de début and fin de période
+      1-GTFS-Common-1: Contrôle de la présence des fichiers obligatoires
+      1-GTFS-Common-10: 'Contrôle de la présence des colonnes qui devraient être obligatoires '
+      1-GTFS-Common-11: Contrôle de la présence de colonnes non traités
+      1-GTFS-Common-12: Contrôle de la présence des données obligatoires
+      1-GTFS-Common-13: Contrôle de la présence de column agency_id si plusieurs agences sont définies
+      1-GTFS-Common-14: Contrôle de la présence de column agency_id même si une seule agence est définie
+      1-GTFS-Common-15: Contrôle de la présence d'une donnée sur valeur d'une autre
+      1-GTFS-Common-16: Contrôle du type des données
+      1-GTFS-Common-2: Contrôle de la présence des fichiers calendar ou calendar_dates
+      1-GTFS-Common-3: Contrôle de la présence des fichiers optionals
+      1-GTFS-Common-4: Contrôle de la présence des fichiers non traités
+      1-GTFS-Common-5: Contrôle de la présence de données dans les fichiers obligatoires
+      1-GTFS-Common-6: Contrôle de la présence de données dans les fichiers calendar ou calendar_dates
+      1-GTFS-Common-7: Contrôle de la présence de données dans les fichiers optionals
+      1-GTFS-Common-8: Contrôle de l'unicité des identifiants
+      1-GTFS-Common-9: Contrôle de la présence des colonnes obligatoires
+      1-GTFS-Route-1: Contrôle de la présence des colonnes obligatoires conditionnelles
+      1-GTFS-Route-2: Contrôle de la présence de données dans route_long_name ou route_short_name
       1-NEPTUNE-XML-1: Conformité à la syntaxe XML suivant les recommandations du W3C.
       1-NEPTUNE-XML-2: Conformité au schéma défini par la XSD du profil TRIDENT/NEPTUNE.
-      2-GTFS-Common-1: Existence of external references
-      2-GTFS-Common-2: Usage of IDs
-      2-GTFS-Common-3: Uniqueness of objects
-      2-GTFS-Common-4: No repeated field values
-      2-GTFS-Route-1: route_short_name and route_long_name shall be different
-      2-GTFS-Route-2: route_short_name shall not be included in route_long_name
-      2-GTFS-Route-3: Contrast between colors
-      2-GTFS-Route-4: No 2 routes have identical route_short_name and route_long_name values, but reversed
-      2-GTFS-Stop-1: location_type of parent_station stops
-      2-GTFS-Stop-2: Usage of location_type
-      2-GTFS-Stop-3: stop_name and stop_desc shall be different
-      2-GTFS-Stop-4: Absence of station in stations
-      2-NEPTUNE-AccessLink-1: Référence aux arrêts <StopArea> et accès <AccessPoint> définissant des liens d'accès <AccessLink>.
-      2-NEPTUNE-AccessLink-2: Référence aux arrêts <StopArea> et accès <AccessPoint> définissant des liens d'accès <AccessLink>.
-      2-NEPTUNE-AccessPoint-1: Référence à un arrêt <StopArea> dans les accès <AccessPoint>.
-      2-NEPTUNE-AccessPoint-2: Référence à un arrêt <StopArea> dans les accès <AccessPoint>.
+      2-GTFS-Common-1: Contrôle de la présence des objets référencés
+      2-GTFS-Common-2: Contrôle de l'utilité des objets
+      2-GTFS-Common-3: Contrôle de l'unicité d'un couple de données
+      2-GTFS-Common-4: Contrôle de la non redondance de valeurs
+      2-GTFS-Route-1: Contrôle de la différence entre route_short_name and route_long_name
+      2-GTFS-Route-2: Contrôle de la non inclusion de route_short_name dans route_long_name
+      2-GTFS-Route-3: Contrôle du contraste des couleurs
+      2-GTFS-Route-4: Contrôle de la non présence d'une route inversant les valeurs route_short_name and route_long_name d'une autre
+      2-GTFS-Stop-1: Contrôle du type du parent_station
+      2-GTFS-Stop-2: Contrôle de l'utilité de column location_type
+      2-GTFS-Stop-3: Contrôle de l'unicité de désignation (stop_name,stop_desc)
+      2-GTFS-Stop-4: Contrôle de la non présence de station dans des stations
+      2-NEPTUNE-AccessLink-1: Correcte référence aux arrêts <StopArea> and accès <AccessPoint> définissant des liens d'accès <AccessLink>.
+      2-NEPTUNE-AccessLink-2: Correcte référence aux arrêts <StopArea> and accès <AccessPoint> définissant des liens d'accès <AccessLink>.
+      2-NEPTUNE-AccessPoint-1: Correcte référence à un arrêt <StopArea> dans les accès <AccessPoint>.
+      2-NEPTUNE-AccessPoint-2: Correcte référence à un arrêt <StopArea> dans les accès <AccessPoint>.
       2-NEPTUNE-AccessPoint-3: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint>.
       2-NEPTUNE-AccessPoint-4: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint> de type 'in'.
       2-NEPTUNE-AccessPoint-5: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint> sur les accès de type 'out'.
       2-NEPTUNE-AccessPoint-6: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint>  sur les accès de type 'inout'.
-      2-NEPTUNE-AccessPoint-7: Modèle de projection de référence utilisé.
-      2-NEPTUNE-AreaCentroid-1: Référence à des arrêts <StopArea> dans la classe d’objets <AreaCentroid>.
-      2-NEPTUNE-AreaCentroid-2: Modèle de projection de référence utilisé.
+      2-NEPTUNE-AccessPoint-7: Vérification du modèle de projection de référence utilisé.
+      2-NEPTUNE-AreaCentroid-1: Correcte référence à des arrêts <StopArea> dans la classe d’objets <AreaCentroid>.
+      2-NEPTUNE-AreaCentroid-2: Vérification du modèle de projection de référence utilisé.
       2-NEPTUNE-Common-1: Unicité des éléments objectId des différents objets d'un lot de fichiers Neptune.
       2-NEPTUNE-Common-2: Unicité des éléments regitrationNumber des différents objets d'un lot de fichiers Neptune.
-      2-NEPTUNE-ConnectionLink-1: Référence aux arrêts <StopArea> définissant des tronçons de correspondance <ConnectionLink>.
+      2-NEPTUNE-ConnectionLink-1: Correcte référence aux arrêts <StopArea> définissant des tronçons de correspondance <ConnectionLink>.
       2-NEPTUNE-Facility-1: Existence de l'arrêt <StopArea> référencé par l'équipement <Facility>.
       2-NEPTUNE-Facility-2: Existence de l'arrêt <StopArea> référencé par l'équipement <Facility>.
-      2-NEPTUNE-Facility-3: Existence de la ligne <Line> référencée par l'équipement <Facility>.
-      2-NEPTUNE-Facility-4: Existence de la correspondance <ConnectionLink> référencée par l'équipement <Facility>.
+      2-NEPTUNE-Facility-3: Existence of line <Line> référencée par l'équipement <Facility>.
+      2-NEPTUNE-Facility-4: Existence of transfer <ConnectionLink> référencée par l'équipement <Facility>.
       2-NEPTUNE-Facility-5: Existence de l'arrêt <StopPoint> référencé par l'équipement <Facility>.
-      2-NEPTUNE-Facility-6: Modèle de projection de référence utilisé.
-      2-NEPTUNE-GroupOfLine-1: Référence à des lignes <Line> dans groupe de lignes <GroupOfLine>.
-      2-NEPTUNE-ITL-1: Référence à des arrêts <StopArea> dans les arrêts <StopArea> de type ITL.
-      2-NEPTUNE-ITL-2: Référence à des arrêts <StopArea> de type ITL dans la classe d’objets <ITL>.
-      2-NEPTUNE-ITL-3: Référence à des arrêts <StopArea> dans la classe d’objets <ITL>.
-      2-NEPTUNE-ITL-4: Type de référence à des arrêts <StopArea> type ITL dans la classe d’objets <ITL>.
-      2-NEPTUNE-ITL-5: Référence à la ligne <Line> dans la classe d’objets <ITL>.
+      2-NEPTUNE-Facility-6: Vérification du modèle de projection de référence utilisé.
+      2-NEPTUNE-GroupOfLine-1: Correcte référence à des lignes <Line> dans groupe de lignes <GroupOfLine>.
+      2-NEPTUNE-ITL-1: Correcte référence à des arrêts <StopArea> dans les arrêts <StopArea> de type ITL.
+      2-NEPTUNE-ITL-2: Correcte référence à des arrêts <StopArea> de type ITL dans la classe d’objets <ITL>.
+      2-NEPTUNE-ITL-3: Correcte référence à des arrêts <StopArea> dans la classe d’objets <ITL>.
+      2-NEPTUNE-ITL-4: Vérification du type de référence à des arrêts <StopArea> type ITL dans la classe d’objets <ITL>.
+      2-NEPTUNE-ITL-5: Bonne référence à la ligne <Line> dans la classe d’objets <ITL>.
       2-NEPTUNE-JourneyPattern-1: Existence de la séquence d'arrêt <ChouetteRoute> référencée par la mission <JourneyPattern>.
       2-NEPTUNE-JourneyPattern-2: Existence des arrêts <StopPoint> référencés par la mission <JourneyPattern>.
-      2-NEPTUNE-JourneyPattern-3: Existence de la ligne <Line> référencée par la mission <JourneyPattern>.
-      2-NEPTUNE-Line-1: Référence au réseau dans l'objet ligne <Line>.
-      2-NEPTUNE-Line-2: Référence à un arrêt <StopArea> comme terminus de ligne <Line>.
-      2-NEPTUNE-Line-3: Référence à un arrêt <StopArea> de type BoardingPosition, Quay ou CommercialStopPoint comme terminus de ligne <Line>.
-      2-NEPTUNE-Line-4: Référence aux séquences d'arrêts <ChouetteRoute> dans l'objet ligne <Line>.
-      2-NEPTUNE-Line-5: Référence aux séquences d'arrêts <ChouetteRoute> dans l'objet ligne <Line>.
+      2-NEPTUNE-JourneyPattern-3: Existence of line <Line> référencée par la mission <JourneyPattern>.
+      2-NEPTUNE-Line-1: Correcte référence au réseau dans l'objet ligne <Line>.
+      2-NEPTUNE-Line-2: Correcte référence à un point d'arrêt sur parcours <StopPoint> comme terminus de ligne <Line>.
+      2-NEPTUNE-Line-3: Correcte référence à un point d'arrêt sur parcours <StopPoint> comme terminus de ligne <Line>.
+      2-NEPTUNE-Line-4: Correcte référence  aux séquences d'arrêts <ChouetteRoute> dans l'objet ligne <Line>.
+      2-NEPTUNE-Line-5: Correcte référence aux séquences d'arrêts <ChouetteRoute> dans l'objet ligne <Line>.
       2-NEPTUNE-Line-6: Présence d'au moins une valeur parmi <name>,<number> ou <publishedName> dans l'objet ligne <Line>.
-      2-NEPTUNE-Network-1: Référence à des lignes <Line> dans version du réseau <PTNetwork>.
-      2-NEPTUNE-Network-2: Valeur autorisée pour le type de source <SourceType> dans version du réseau <PTNetwork>.
+      2-NEPTUNE-Network-1: Correcte référence à des lignes <Line> dans version of network <PTNetwork>.
+      2-NEPTUNE-Network-2: Valeur autorisée pour le type de source <SourceType> dans version of network <PTNetwork>.
       2-NEPTUNE-PtLink-1: Existence des  arrêts <StopPoint> référencés par les  tronçons commerciaux <PTLink>.
       2-NEPTUNE-Route-1: Existence des missions <JourneyPattern> référencées par la séquence d'arrêt <ChouetteRoute>.
-      2-NEPTUNE-Route-10: Référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
-      2-NEPTUNE-Route-11: Sens de la référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
+      2-NEPTUNE-Route-10: référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
+      2-NEPTUNE-Route-11: Cohérence des sens de la référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
       2-NEPTUNE-Route-12: Cohérence des terminus de la référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
       2-NEPTUNE-Route-2: Existence des tronçons commerciaux <PtLink> référencés par la séquence d'arrêt <ChouetteRoute>.
       2-NEPTUNE-Route-3: Existence de la séquence opposée <ChouetteRoute> référencée par la séquence d'arrêt <ChouetteRoute>.
-      2-NEPTUNE-Route-4: Référence à un tronçon commercial <PtLink> dans une séquence d'arrêts <ChouetteRoute>.
-      2-NEPTUNE-Route-5: Tous les points d'arrêts sur parcours sont rattachés à une séquence d'arrêts <ChouetteRoute> au départ d'un tronçon commercial <PtLink> et/ou à l'arrivée d'un autre tronçon commercial <PtLink> de la même séquence d'arrêts.
-      2-NEPTUNE-Route-6: Ordre des points d'arrêts sur parcours <StopPoint> dans le chainage des tronçons <PtLink> d'une séquence d'arrêts <ChouetteRoute>.
-      2-NEPTUNE-Route-7: Référence mutuelle des missions <JourneyPattern> et des séquences d'arrêts <ChouetteRoute>.
-      2-NEPTUNE-Route-8: Cohérence des références aux points d'arrêt des missions <JourneyPattern> et des séquences d'arrêts <ChouetteRoute>.
+      2-NEPTUNE-Route-4: Correcte référence à un tronçon commercial <PtLink> dans une séquence d'arrêts <ChouetteRoute>.
+      2-NEPTUNE-Route-5: Vérification que tous les points d'arrêts sur parcours sont rattachés à une séquence d'arrêts <ChouetteRoute> au départ d'un tronçon commercial <PtLink> et/ou à l'arrivée d'un autre tronçon commercial <PtLink> de la même séquence d'arrêts.
+      2-NEPTUNE-Route-6: Vérification du correct ordonnancement des points d'arrêts sur parcours <StopPoint> dans le chainage des tronçons <PtLink> d'une séquence d'arrêts <ChouetteRoute>.
+      2-NEPTUNE-Route-7: référence mutuelle des missions <JourneyPattern> and des séquences d'arrêts <ChouetteRoute>.
+      2-NEPTUNE-Route-8: Cohérence des références aux points d'arrêt des missions <JourneyPattern> and des séquences d'arrêts <ChouetteRoute>.
       2-NEPTUNE-Route-9: Utilité des points d'arrêts sur parcours des séquences d'arrêts <ChouetteRoute>.
-      2-NEPTUNE-StopArea-1: Référence à des arrêts <StopArea> et/ou à des points d'arrêt sur parcours <StopPoint> dans les arrêts <StopArea>.
-      2-NEPTUNE-StopArea-2: Référence à des arrêts <StopArea> dans les arrêts <StopArea> de type StopPlace.
-      2-NEPTUNE-StopArea-3: Référence à des arrêts <StopArea> dans les arrêts <StopArea> de type CommercialStopPoint.
-      2-NEPTUNE-StopArea-4: Référence à des points d'arrêt sur parcours <StopPoint> dans les arrêts <StopArea> de type BoardingPosition ou Quay.
-      2-NEPTUNE-StopArea-5: Référence à une position géographique <AreaCentroid> dans les arrêts <StopArea> de tout type StopPlace, CommercialStopPoint, BoardingPosition et Quay.
-      2-NEPTUNE-StopArea-6: Référence réciproque d'une position géographique <AreaCentroid> dans les arrêts <StopArea> de tout type StopPlace, CommercialStopPoint, BoardingPosition et Quay.
-      2-NEPTUNE-StopPoint-1: Existence de la ligne <Line> référencée par l'arrêt <StopPoint>.
-      2-NEPTUNE-StopPoint-2: Existence du réseau <PTNetwork> référence par l'arrêt <StopPoint>.
+      2-NEPTUNE-StopArea-1: Correcte référence à des arrêts <StopArea> et/ou à des points d'arrêt sur parcours <StopPoint> dans les arrêts <StopArea>.
+      2-NEPTUNE-StopArea-2: Correcte référence à des arrêts <StopArea> dans les arrêts <StopArea> de type StopPlace.
+      2-NEPTUNE-StopArea-3: Correcte référence à des arrêts <StopArea> dans les arrêts <StopArea> de type CommercialStopPoint.
+      2-NEPTUNE-StopArea-4: Correcte référence à des points d'arrêt sur parcours <StopPoint> dans les arrêts <StopArea> de type BoardingPosition ou Quay.
+      2-NEPTUNE-StopArea-5: Correcte référence à une position géographique <AreaCentroid> dans les arrêts <StopArea> de tout type StopPlace, CommercialStopPoint, BoardingPosition and Quay.
+      2-NEPTUNE-StopArea-6: référenceréciproque d'une position géographique <AreaCentroid> dans les arrêts <StopArea> de tout type StopPlace, CommercialStopPoint, BoardingPosition and Quay.
+      2-NEPTUNE-StopPoint-1: Existence of line <Line> référencée par l'arrêt <StopPoint>.
+      2-NEPTUNE-StopPoint-2: Existence of network <PTNetwork> référence par l'arrêt <StopPoint>.
       2-NEPTUNE-StopPoint-3: Existence de l'arrêt   <StopArea> référencé par l'arrêt <StopPoint>.
-      2-NEPTUNE-StopPoint-4: Modèle de projection de référence utilisé.
+      2-NEPTUNE-StopPoint-4: Vérification du modèle de projection de référence utilisé.
       2-NEPTUNE-Timetable-1: Utilité des calendriers.
-      2-NEPTUNE-Timetable-2: Affectation des courses à un calendrier.
-      2-NEPTUNE-Timetable-3: Date fin de période > date début de période.
+      2-NEPTUNE-Timetable-2: Validité des dates de début and de fin des périodes des calendriers
+      2-NEPTUNE-Timetable-3: 
       2-NEPTUNE-VehicleJourney-1: Existence de la séquence d'arrêt <ChouetteRoute> référencée par la course <VehicleJourney>.
-      2-NEPTUNE-VehicleJourney-2: Existence de la mission <JourneyPattern> référencée par la course <VehicleJourney>.
-      2-NEPTUNE-VehicleJourney-3: Existence de la ligne <Line> référencée par la course <VehicleJourney>.
+      2-NEPTUNE-VehicleJourney-2: Existence of journey pattern <JourneyPattern> référencée par la course <VehicleJourney>.
+      2-NEPTUNE-VehicleJourney-3: Existence of line <Line> référencée par la course <VehicleJourney>.
       2-NEPTUNE-VehicleJourney-4: Existence de l'opérateur <Company> référencé par la course <VehicleJourney>.
       2-NEPTUNE-VehicleJourney-5: Existence de la tranche horaire <TimeSlot> référencée par la course <VehicleJourney>.
-      2-NEPTUNE-VehicleJourney-6: Cohérence entre la course, la mission et la séquence d'arrêts.
+      2-NEPTUNE-VehicleJourney-6: Cohérence entre la course, la mission and la séquence d'arrêts.
       2-NEPTUNE-VehicleJourney-7: Utilité des missions
-      2-NEPTUNE-VehicleJourney-8: Vérification de la mission par défaut
+      2-NEPTUNE-VehicleJourney-8: Mission implicite
       2-NEPTUNE-VehicleJourneyAtStop-1: Existence de l'arrêt <StopPoint> référencé par l'horaire <VehicleJourneyAtStop>.
-      2-NEPTUNE-VehicleJourneyAtStop-2: Existence de la course <VehicleJourney> référenceé par l'horaire <VehicleJourneyAtStop>.
-      2-NEPTUNE-VehicleJourneyAtStop-3: Adéquation des horaires de la course à la séquence d'arrêts.
-      2-NEPTUNE-VehicleJourneyAtStop-4: Adéquation des horaires de la course à la mission.
-      3-AccessLink-1: Proximité entre les deux extrémités d'un lien d'accès
-      3-AccessLink-2: Cohérence entre la distance fournie sur le lien d'accès et la distance géographique entre les deux extrémités du lien d'accès
-      3-AccessLink-3: Vitesse de parcours entre les deux extrémités d'un lien d'accès
-      3-AccessPoint-1: Géolocalisation de tous les accès
-      3-AccessPoint-2: Trop de proximité entre deux accès de nom différents
-      3-AccessPoint-3: Proximité entre les accès et leur arrêt de rattachement
-      3-ConnectionLink-1: Proximité entre les deux arrêts d'une correspondance
-      3-ConnectionLink-2: Cohérence entre la distance fournie sur la correspondance et la distance géographique entre les deux arrêts de la correspondance
-      3-ConnectionLink-3: Vitesse de parcours entre les deux arrêts d'une correspondance
-      3-Facility-1: Géolocalisation de tous les équipements
-      3-Facility-2: Proximité entre les équipements et leur arrêt de rattachement
-      3-JourneyPattern-1: Double définition de missions
-      3-Line-1: Non homonymie des lignes
-      3-Line-2: Présence de séquences d'arrêts sur la ligne
-      3-Route-1: Succession des arrêts de la séquence
+      2-NEPTUNE-VehicleJourneyAtStop-2: Existence of journey <VehicleJourney> référenceé par l'horaire <VehicleJourneyAtStop>.
+      2-NEPTUNE-VehicleJourneyAtStop-3: adéquation des horaires of journey à la séquence d'arrêts.
+      2-NEPTUNE-VehicleJourneyAtStop-4: adéquation des horaires of journey à la mission.
+      3-AccessLink-1: Vérification de la proximité entre les deux extrémités d'un lien d'accès
+      3-AccessLink-2: Vérification de la cohérence entre la distance fournie sur le lien d'accès and la distance géographique entre les deux extrémités of access link
+      3-AccessLink-3: Vérification de la vitesse de parcours entre les deux extrémités d'un lien d'accès
+      3-AccessPoint-1: Vérification de la géolocalisation de tous les accès
+      3-AccessPoint-2: Vérification que deux accès de nom différents ne sont pas trop proches
+      3-AccessPoint-3: Vérification de la proximité entre les accès and leur arrêt de rattachement
+      3-ConnectionLink-1: Vérification de la proximité entre les deux arrêts d'une correspondance
+      3-ConnectionLink-2: Vérification de la cohérence entre la distance fournie sur la correspondance and la distance géographique entre les deux arrêts of transfer
+      3-ConnectionLink-3: Vérification de la vitesse de parcours entre les deux arrêts d'une correspondance
+      3-Facility-1: Vérification de la géolocalisation de tous les accès
+      3-Facility-2: Vérification de la proximité entre les équipements and leur arrêt de rattachement
+      3-JourneyPattern-1: Vérification de double définition de missions
+      3-JourneyPattern-2: 
+      3-JourneyPattern-3: 
+      3-Line-1: Vérification de la non homonymie des lignes
+      3-Line-2: Vérification de la présence de séquences d'arrêts sur la ligne
+      3-Route-1: Vérification de la succession des arrêts de la séquence
       3-Route-2: Vérification de la séquence inverse
-      3-Route-3: Distance entre deux arrêts successifs de la séquence
-      3-Route-4: Double définition de séquences
+      3-Route-3: Vérification de la distance entre deux arrêts successifs de la séquence
+      3-Route-4: Vérification de double définition de séquences
       3-Route-5: Vérification de séquences sans séquence opposée
-      3-Route-6: Présence d'arrêts dans la séquence
-      3-Route-7: Présence de missions
-      3-Route-8: Utilisation des arrêts par les missions
-      3-Route-9: Existence d’une mission passant par tous les arrêts de la séquence
-      3-StopArea-1: Géolocalisation de tous les arrêts hors ITL
-      3-StopArea-2: Trop grande proximité de 2 arrêts de noms différents en dehors d'un même regroupement d'arrêts
-      3-StopArea-3: Unicité des arrêts
-      3-StopArea-4: Géolocalisation des arrêts
-      3-StopArea-5: Position relative des arrêts et de leur parent
-      3-VehicleJourney-1: Chronologie des horaires de passage à un arrêt
-      3-VehicleJourney-2: Vitesse de transfert entre deux arrêts
-      3-VehicleJourney-3: Cohérence des courses successives desservant deux mêmes arrêts
-      3-VehicleJourney-4: Affectation des courses à un calendrier
-      4-AccessLink-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-AccessPoint-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-Company-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-ConnectionLink-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
+      3-Route-6: Vérification de la présence d'arrêts dans la séquence
+      3-Route-7: Vérification de la présence de missions
+      3-Route-8: Vérification de l'utilisation des arrêts par les missions
+      3-Route-9: Vérification de l’existence d’une mission passant par tous les arrêts de la séquence
+      3-StopArea-1: Vérification de la géolocalisation de tous les arrêts hors ITL
+      3-StopArea-2: Vérification que 2 arrêts de noms différents en dehors d'un même regroupement d'arrêts ne sont pas trop proches
+      3-StopArea-3: Vérification de l'unicité des arrêts
+      3-StopArea-4: Vérification de la géolocalisation des arrêts
+      3-StopArea-5: Vérification de la position relative des arrêts and de leur parent
+      3-VehicleJourney-1: Vérification de la chronologie des horaires de passage à un arrêt
+      3-VehicleJourney-2: Vérification de la vitesse de transfert entre deux arrêts
+      3-VehicleJourney-3: Vérification de la cohérence des courses successives desservant deux mêmes arrêts
+      3-VehicleJourney-4: Vérification de l'affectation des courses à un calendrier
+      4-AccessLink-1: Vérification de contraintes sur les attributs des liens d'accès
+      4-AccessPoint-1: Vérification de contraintes sur les attributs des accès
+      4-Company-1: Vérification de contraintes sur les attributs des transporteurs
+      4-ConnectionLink-1: Vérification de contraintes sur les attributs des correspondances
       4-ConnectionLink-2: Vérification des type d'arrêts en correspondance
-      4-GroupOfLine-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-JourneyPattern-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-Line-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-Line-2: Modes de transport
-      4-Line-3: Unicité de la relation Line->Groupe of Line
-      4-Line-4: Unicité du couple A/R des séquences d'arrêts
-      4-Network-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-Route-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-StopArea-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-StopArea-2: Appartenance des arrêts physiques à un arrêt commercial
-      4-Timetable-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-VehicleJourney-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-VehicleJourney-2: Modes de transport
+      4-GroupOfLine-1: Vérification de contraintes sur les attributs des groupes de lignes
+      4-JourneyPattern-1: Vérification de contraintes sur les attributs des missions
+      4-Line-1: Vérification de contraintes sur les attributs des lignes
+      4-Line-2: Vérification des modes de transport des lignes
+      4-Line-3: Vérification des groupes de lignes d'une ligne
+      4-Line-4: Vérification des séquences d'arrêts d'une ligne
+      4-Network-1: Vérification de contraintes sur les attributs des réseaux
+      4-Route-1: Vérification de contraintes sur les attributs des séquences d'arrêt
+      4-StopArea-1: Vérification de contraintes sur les attributs des arrêts
+      4-StopArea-2: Vérification de l'existance d'un arrêt commercial pour les arrêts physiques
+      4-StopArea-3: Vérification de la cohérence entre les noms de communes and leur code INSEE
+      4-Timetable-1: Vérification de contraintes sur les attributs des calendiers
+      4-VehicleJourney-1: Vérification de contraintes sur les attributs des courses
+      4-VehicleJourney-2: Vérification des modes de transport des courses
       detail_1_gtfs_calendar_1: No calendar day is defined
       detail_1_gtfs_calendar_2: The calendar end date is before the calendar start date
       detail_1_gtfs_common_1: File %{filename} is required
@@ -283,7 +286,7 @@ en:
       detail_1_gtfs_common_14: Column agency_id is missing in file %{filename}
       detail_1_gtfs_common_15_1: The value for arrival_time is required when departure_time is not empty
       detail_1_gtfs_common_15_2: The value for departure_time is required when arrival_time is not empty
-      detail_1_gtfs_common_15_3: The value for min_transfer_time is required when transfer_type=2
+      detail_1_gtfs_common_15_3: The valuefor  min_transfer_time is required when transfer_type=2
       detail_1_gtfs_common_16: 'The value %{error_value} is forbidden for %{reference_value} '
       detail_1_gtfs_common_2: At least one file calendar.txt and/or calendar_dates.txt is required
       detail_1_gtfs_common_3: The optional file %{filename} is not present
@@ -392,21 +395,21 @@ en:
       detail_2_neptune_vehiclejourneyatstop_2: 'Un horaire de la course %{source_objectid} référence une autre course : vehicleJourneyId = %{error_value}'
       detail_2_neptune_vehiclejourneyatstop_3: La course %{source_objectid} ne fournit pas les horaires des points d'arrêts selon l'ordre de la séquence d'arrêts %{error_value}
       detail_2_neptune_vehiclejourneyatstop_4: La course %{source_objectid} ne fournit pas les horaires des points d'arrêts de sa mission %{error_value}
-      detail_3_accesslink_1: 'For access link %{source_label} (%{source_objectid}), the distance between stop %{target_0_label} (%{target_0_objectid}) and access %{target_1_label} (%{target_1_objectid}) is too large : distance %{error_value} > %{reference_value}'
-      detail_3_accesslink_2: 'For access link %{source_label} (%{source_objectid}), the distance between stop %{target_0_label} (%{target_0_objectid}) and access %{target_1_label} (%{target_1_objectid}) : %{error_value} is large than the link size : %{reference_value}'
+      detail_3_accesslink_1: 'For access link %{source_label} (%{source_objectid}), the distance between stop %{target_0_label} (%{target_0_objectid}) and access %{target_1_label} (%{target_1_objectid}) is too large : distance %{error_value} > %{reference_value} (meters)'
+      detail_3_accesslink_2: 'For access link %{source_label} (%{source_objectid}), the distance between stop %{target_0_label} (%{target_0_objectid}) and access %{target_1_label} (%{target_1_objectid}) : %{error_value} is larger than the link size : %{reference_value} (meters)'
       detail_3_accesslink_3_1: For access link %{source_label} (%{source_objectid}), the default speed %{error_value} is larger than %{reference_value} km/h
       detail_3_accesslink_3_2: For access link %{source_label} (%{source_objectid}), the occasional traveler speed %{error_value} is larger than %{reference_value} km/h
       detail_3_accesslink_3_3: For access link %{source_label} (%{source_objectid}), the regular traveler speed %{error_value} is larger than %{reference_value} km/h
       detail_3_accesslink_3_4: For access link %{source_label} (%{source_objectid}), the handicapped traveler speed %{error_value} is larger than %{reference_value} km/h
       detail_3_accesspoint_1: Access %{source_label} (%{source_objectid}) coordinates are missing
-      detail_3_accesspoint_2: 'Access %{source_label} (%{source_objectid}) is too close from access %{target_0_label} (%{target_0_objectid}) : distance %{error_value} < %{reference_value}'
-      detail_3_accesspoint_3: 'Access %{source_label} (%{source_objectid}) is too far from its parent %{target_0_label} (%{target_0_objectid}) : distance %{error_value} > %{reference_value}'
-      detail_3_connectionlink_1: 'For transfer %{source_label} (%{source_objectid}), the distance between stops %{target_0_label} (%{target_0_objectid}) and %{target_1_label} (%{target_1_objectid}) is too large : distance %{error_value} > %{reference_value}'
-      detail_3_connectionlink_2: 'For transfer %{source_label} (%{source_objectid}), the distance between stops %{target_0_label} (%{target_0_objectid}) and %{target_1_label} (%{target_1_objectid}) : %{error_value} is large than the link size : %{reference_value}'
-      detail_3_connectionlink_3_1: For transfer %{source_label} (%{source_objectid}), the default speed %{error_value} is larger than %{reference_value} km/h
-      detail_3_connectionlink_3_2: For transfer %{source_label} (%{source_objectid}), the occasional traveler speed %{error_value} is larger than %{reference_value} km/h
-      detail_3_connectionlink_3_3: For transfer %{source_label} (%{source_objectid}), the regular traveler speed %{error_value} is larger than %{reference_value} km/h
-      detail_3_connectionlink_3_4: For transfer %{source_label} (%{source_objectid}), the handicapped traveler speed %{error_value} is larger than %{reference_value} km/h
+      detail_3_accesspoint_2: 'Access %{source_label} (%{source_objectid}) is too close from access %{target_0_label} (%{target_0_objectid}) : distance %{error_value} < %{reference_value} (meters)'
+      detail_3_accesspoint_3: 'Access %{source_label} (%{source_objectid}) is too far from its parent %{target_0_label} (%{target_0_objectid}) : distance %{error_value} > %{reference_value} (meters)'
+      detail_3_connectionlink_1: 'For transfer %{source_label} (%{source_objectid}), the distance between stops %{target_0_label} (%{target_0_objectid}) and %{target_1_label} (%{target_1_objectid}) is too large : distance %{error_value} > %{reference_value} (meters)'
+      detail_3_connectionlink_2: 'For transfer %{source_label} (%{source_objectid}), the distance between stops %{target_0_label} (%{target_0_objectid}) and %{target_1_label} (%{target_1_objectid}) : %{error_value} meters is larger than the link size : %{reference_value} meters'
+      detail_3_connectionlink_3_1: For transfer %{source_label} (%{source_objectid}), the default speed %{error_value} km/h is larger than %{reference_value} km/h
+      detail_3_connectionlink_3_2: For transfer %{source_label} (%{source_objectid}), the occasional traveler speed %{error_value} km/h is larger than %{reference_value} km/h
+      detail_3_connectionlink_3_3: For transfer %{source_label} (%{source_objectid}), the regular traveler speed %{error_value} km/h is larger than %{reference_value} km/h
+      detail_3_connectionlink_3_4: For transfer %{source_label} (%{source_objectid}), the handicapped traveler speed %{error_value} km/h is larger than %{reference_value} km/h
       detail_3_facility_1: Facility %{source_label} (%{source_objectid}) has no coordinates
       detail_3_facility_2: 'Facility %{source_label} (%{source_objectid}) is too far from its parent %{areaName} (%{areaId}) : distance %{error_value} > %{reference_value}'
       detail_3_journeypattern_1: Journey pattern %{source_label} (%{source_objectid}) uses the same stops as journey pattern %{target_0_label} (%{target_0_objectid}) - stop number = %{error_value}
@@ -416,8 +419,8 @@ en:
       detail_3_route_2: 'Terminal stops of stop sequence %{source_label} (%{source_objectid}) are not coherent with those of the opposite stop sequence : one sequence starts from %{target_0_label} (%{target_0_objectid}) and the opposite sequence arrives at %{target_1_label} (%{target_1_objectid})'
       detail_3_route_3_1: 'For stop sequence %{source_label} (%{source_objectid}), between stops %{target_0_label} (%{target_0_objectid}) and %{target_1_label} (%{target_1_objectid}), distance %{error_value} < %{reference_value} '
       detail_3_route_3_2: 'For stop sequence %{source_label} (%{source_objectid}), between stops %{target_0_label} (%{target_0_objectid}) and %{target_1_label} (%{target_1_objectid}), distance %{error_value} > %{reference_value} '
-      detail_3_route_4: Stop sequence %{source_label} (%{source_objectid}) has the ordered list os stops than stop sequence %{target_0_label} (%{target_0_objectid})
-      detail_3_route_5: Stop sequence %{source_label} (%{source_objectid}) may have stop sequence %{target_0_label} (%{target_0_objectid}) has opposite stop sequence
+      detail_3_route_4: Stop sequence %{source_label} (%{source_objectid}) has the same ordered list of stops than stop sequence %{target_0_label} (%{target_0_objectid})
+      detail_3_route_5: Stop sequence %{source_label} (%{source_objectid}) may have stop sequence %{target_0_label} (%{target_0_objectid}) as its opposite stop sequence
       detail_3_route_6: Stop sequence %{source_label} (%{source_objectid}) must contain at least two stops
       detail_3_route_7: Stop sequence %{source_label} (%{source_objectid}) has no journey pattern
       detail_3_route_8: Stop sequence %{source_label} (%{source_objectid}) includes %{error_value} stops never referenced in a journey pattern
@@ -426,12 +429,12 @@ en:
       detail_3_stoparea_2: 'Stop %{source_label} (%{source_objectid}) is too close from stop %{target_0_label} (%{target_0_objectid}) : distance %{error_value} < %{reference_value}'
       detail_3_stoparea_3: Stops %{source_label} (%{source_objectid} and %{target_0_objectid}) are served by the same lines
       detail_3_stoparea_4: Stop %{source_label} (%{source_objectid}) is out of the control perimeter
-      detail_3_stoparea_5: 'Stop %{source_label} (%{source_objectid}) is too far from its parent %{target_0_label} (%{target_0_objectid}) : distance %{error_value} > %{reference_value}'
-      detail_3_vehiclejourney_1: Stop %{target_0_label} (%{target_0_objectid}) has a stop duration %{error_value} > %{reference_value}
+      detail_3_stoparea_5: 'Stop %{source_label} (%{source_objectid}) is too far from its parent %{target_0_label} (%{target_0_objectid}) : distance %{error_value} > %{reference_value} (meters)'
+      detail_3_vehiclejourney_1: 'The waiting time is too long at Stop %{target_0_label} (%{target_0_objectid}) : %{error_value} > %{reference_value} (minutes)'
       detail_3_vehiclejourney_2_1: Journey %{source_label} (%{source_objectid}) has decreasing stop times between stops %{target_0_label} (%{target_0_objectid}) and %{target_1_label} (%{target_1_objectid})
       detail_3_vehiclejourney_2_2: Journey %{source_label} (%{source_objectid}) speed %{error_value} < %{reference_value} km/h between stops %{target_0_label} (%{target_0_objectid}) and %{target_1_label} (%{target_1_objectid})
       detail_3_vehiclejourney_2_3: Journey %{source_label} (%{source_objectid}) speed %{error_value} > %{reference_value} km/h between stops %{target_0_label} (%{target_0_objectid}) and %{target_1_label} (%{target_1_objectid})
-      detail_3_vehiclejourney_3: Journey %{source_label} (%{source_objectid}) seems to vary too much between stops %{target_1_label} (%{target_1_objectid}) and %{target_2_label} (%{target_2_objectid}) %{error_value} > %{reference_value} when compared with the next journey pattern %{target_0_label} (%{target_0_objectid})
+      detail_3_vehiclejourney_3: 'The travel time of Vehicle Journey %{source_label} (%{source_objectid}) has a too large difference with the travel time of the next journey %{target_0_label} (%{target_0_objectid}):  %{error_value} > %{reference_value} minutes, between stops %{target_1_label} (%{target_1_objectid}) and %{target_2_label} (%{target_2_objectid})'
       detail_3_vehiclejourney_4: Journey %{source_label} (%{source_objectid}) has no calendar
       detail_4_accesslink_1_max_size: Attribute %{reference_value} of access link %{source_label} (%{source_objectid}) is too large (%{error_value})
       detail_4_accesslink_1_min_size: Attribute %{reference_value} of access link %{source_label} (%{source_objectid}) is empty or too small (%{error_value})
@@ -490,15 +493,11 @@ en:
       detail_4_vehiclejourney_1_unique: Attribute %{reference_value} of journey %{source_label} (%{source_objectid}) has the same value as that of journey %{target_0_label} (%{target_0_objectid})
       detail_4_vehiclejourney_2: Journey %{source_label} (%{source_objectid}) transport mode is invalid %{error_value}
     severities:
-      ERROR_txt: 
-      IGNORED_txt: 
-      OK_txt: 
-      _txt: 
-      error_txt: Error
-      ignored_txt: Ignored
-      ok_txt: Ok
-      success_txt: Success
-      warning_txt: Warning
+      error_txt: 
+      ignored_txt: 
+      ok_txt: 
+      success_txt: 
+      warning_txt: 
   convert: Convert
   convert_gtfs: Convert to GTFS
   convert_neptune: Convert to Neptune format
@@ -577,7 +576,8 @@ en:
   neptune: Neptune
   netex: NeTEx
   report:
-    conform_lines: Conform lines
+    conform_files: Conforms files
+    conform_lines: Conforms lines
     convert_ended_at: Convert ended
     default_view:
       files: Files
@@ -587,6 +587,7 @@ en:
     file:
       column: Column
       line: Line
+    nonconforming_files: Nonconforming files
     nonconforming_lines: Nonconforming lines
     total_results: 'Total results:'
     total_results_files: 
@@ -595,9 +596,10 @@ en:
   report_results:
     icons:
       title:
-        ERROR_txt: 
-        IGNORED_txt: 
-        OK_txt: 
+        error_txt: 
+        ignored_txt: 
+        none_txt: 
+        ok_txt: 
   search_form:
     label:
       search: Search
