@@ -517,6 +517,11 @@ fr:
     mailer:
       confirmation_instructions:
         user_subject: Instructions de confirmation
+    registrations:
+      edit:
+        token:
+          renew: Renouveler
+          title: Token d'authentification pour l'API
     shared:
       links:
         edit_account: Modifier mon compte
@@ -704,4 +709,16 @@ fr:
   to: vers
   validate: Valider
   validated: Validation
+  validation_report:
+    details:
+      1-GTFS-Common-3: 
+      1-GTFS-Common-4: 
+      2-GTFS-Common-2: 
+      2-GTFS-Route-2: 
+      2-GTFS-Route-3: 
+      detail_1_gtfs_common_3: 
+      detail_1_gtfs_common_4: 
+      detail_2_gtfs_common_2: 
+      detail_2_gtfs_route_2: 
+      detail_2_gtfs_route_3: 
   want_to_cancel_your_account: You want to cancel your account?
