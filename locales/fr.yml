@@ -522,6 +522,7 @@ fr:
         token:
           renew: Renouveler
           title: Token d'authentification pour l'API
+      edit_title: Éditer mon profil
     shared:
       links:
         edit_account: Modifier mon compte

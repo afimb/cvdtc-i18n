@@ -522,6 +522,7 @@ en:
         token:
           renew: Renew
           title: 
+      edit_title: 
     shared:
       links:
         edit_account: Edit my account
