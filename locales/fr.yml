@@ -606,6 +606,7 @@ fr:
         ignored_txt: Ignoré
         none_txt: Absent
         ok_txt: Ok
+        warning_txt: Avertissement
   search_form:
     label:
       search: Rechercher

@@ -606,6 +606,7 @@ en:
         ignored_txt: 
         none_txt: 
         ok_txt: 
+        warning_txt: 
   search_form:
     label:
       search: Search
