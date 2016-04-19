@@ -104,6 +104,7 @@ fr:
       records: 
     toggle_navigation: 
   api: API
+  choose: Parcourir
   complete: Complété
   compliance_check_results:
     details:
@@ -499,6 +500,7 @@ fr:
       success_txt: Succès
       warning_txt: Avertissement
   convert: Convertir
+  convert_download: Télécharger
   convert_gtfs: Convertir en GTFS
   convert_neptune: Convertir au format Neptune
   convert_netex: Convertir au format NeTEx
@@ -517,6 +519,8 @@ fr:
     mailer:
       confirmation_instructions:
         user_subject: Instructions de confirmation
+      reset_password_instructions:
+        user_subject: Reset password instructions
     registrations:
       edit:
         token:
@@ -620,8 +624,8 @@ fr:
     hints:
       job:
         convert:
-          file: Spécifier un fichier ZIP à convertir
-          format: Spécifier le format du fichier à convertir
+          file: Sélectionner un fichier d'une taille maximale de 80Mo
+          format: Spécifier le format du jeu de données à convertir
           format_convert: Spécifier le format de conversion
           ignore_end_chars: Lors de la comparaison des noms d’arrêts, cette option permet de ne pas prendre en compte les derniers caractères du nom de l’arrêt (sauf si celui-ci n’a pas assez de caractères pour cela)
           ignore_last_word: Lors de la comparaison des noms d’arrêts, cette option permet de ne pas prendre en compte le dernier mot du nom de l’arrêt (sauf si celui-ci n’est composé que d’un seul mot).
@@ -629,12 +633,12 @@ fr:
           max_distance_for_connection_link: Distance maximale entre deux arrêts pour les lier par une correspondance, ces correspondances sont hors zone d’arrêt. Elles viennent en supplément de celles définies dans GTFS (ce mécanisme tient compte des correspondances exclues), une distance de 0 ne génère aucune correspondance.
           object_id_prefix: 
           time_zone: Spécifier votre fuseau horaire
-          url: 'Spécifier une URL vers un fichier ZIP à importer pour conversion (ex : http://geo-ws.metzmetropole.fr/services/opendata/gtfs_current.zip)'
+          url: 'Exemple : http://geo-ws.metzmetropole.fr/services/opendata/gtfs_current.zip'
         index:
-          file: 'Ajouter un fichier ZIP (max: 80Mo)'
-          format: Spécifier le format du fichier
+          file: Sélectionner un fichier d'une taille maximale de 80Mo
+          format: Spécifier le format du jeu de données
           iev_action: 
-          url: 'Spécifier une URL vers un fichier ZIP à importer pour validation (ex : http://geo-ws.metzmetropole.fr/services/opendata/gtfs_current.zip)'
+          url: 'Exemple : http://geo-ws.metzmetropole.fr/services/opendata/gtfs_current.zip'
         new:
           file: 
           format: 
@@ -649,7 +653,7 @@ fr:
     labels:
       job:
         convert:
-          file: Fichier
+          file: Fichier zip contenant les données de l'offre à convertir
           format: Format
           format_convert: Format de conversion
           ignore_end_chars: Ignorer les n derniers caractères
@@ -658,9 +662,9 @@ fr:
           max_distance_for_connection_link: Distance max pour créer les correspondances
           object_id_prefix: Préfixe d'identifiants
           time_zone: Fuseau horaire
-          url: URL
+          url: URL d'accès au fichier zip à convertir.
         index:
-          file: Fichier
+          file: Fichier zip contenant les données de l'offre à valider
           file[]: Fichiers
           format: Format
           iev_action: Action
@@ -669,7 +673,7 @@ fr:
           max_distance_for_commercial: Distance max pour créer les zones
           max_distance_for_connection_link: Distance max pour créer les correspondances
           time_zone: Fuseau horaire
-          url: URL
+          url: URL d'accès au fichier zip à valider.
         new:
           file: Fichier
           format: Format
@@ -680,7 +684,7 @@ fr:
           max_distance_for_connection_link: Distance max pour créer les correspondances
           object_id_prefix: 
           time_zone: 
-          url: URL
+          url: URL d'accès au fichier zip à valider.
     placeholders:
       job:
         convert:

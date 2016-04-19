@@ -104,6 +104,7 @@ en:
       records: 
     toggle_navigation: 
   api: API
+  choose: Choose
   complete: Complete
   compliance_check_results:
     details:
@@ -499,6 +500,7 @@ en:
       success_txt: 
       warning_txt: 
   convert: Convert
+  convert_download: 
   convert_gtfs: Convert to GTFS
   convert_neptune: Convert to Neptune format
   convert_netex: Convert to NeTEx format
@@ -517,6 +519,8 @@ en:
     mailer:
       confirmation_instructions:
         user_subject: Confirmation instructions
+      reset_password_instructions:
+        user_subject: 
     registrations:
       edit:
         token:
