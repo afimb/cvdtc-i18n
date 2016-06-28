@@ -493,12 +493,6 @@ en:
       detail_4_vehiclejourney_1_pattern: Attribute %{reference_value} of journey %{source_label} (%{source_objectid}) has incorrect format (%{error_value})
       detail_4_vehiclejourney_1_unique: Attribute %{reference_value} of journey %{source_label} (%{source_objectid}) has the same value as that of journey %{target_0_label} (%{target_0_objectid})
       detail_4_vehiclejourney_2: Journey %{source_label} (%{source_objectid}) transport mode is invalid %{error_value}
-    severities:
-      error_txt: 
-      ignored_txt: 
-      ok_txt: 
-      success_txt: 
-      warning_txt: 
   convert: Convert
   convert_download: 
   convert_gtfs: Convert to GTFS
@@ -550,27 +544,17 @@ en:
       job:
         create: Start
   history: History
-  iev:
-    errors:
-      duplicate_or_missing_data: 
-      duplicate_parameters: 
-      internal_error: 
-      invalid_file_format: 
-      invalid_parameters: 
-      invalid_request: 
-      missing_parameters: 
-      scheduled_job: 
-      unknown_action: 
-      unknown_file: 
-      unknown_job: 
-      unknown_referential: 
-      unreadable_parameters: 
   job:
     cancel: Cancel
     convert_from: Convert from
     destroy:
       confirm: Thank you to confirm the deletion of this element
       title: 'History of my jobs:'
+    results:
+      download_by:
+        files: 
+        lines: 
+        tests: 
     status:
       pending: Pending
     tab:

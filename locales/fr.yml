@@ -493,12 +493,6 @@ fr:
       detail_4_vehiclejourney_1_pattern: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
       detail_4_vehiclejourney_1_unique: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) a une valeur partagée avec la course %{target_0_label} (%{target_0_objectid})
       detail_4_vehiclejourney_2: La course %{source_label} (%{source_objectid}) a un mode de transport interdit %{error_value}
-    severities:
-      error_txt: Erreur
-      ignored_txt: Ignoré
-      ok_txt: Ok
-      success_txt: Succès
-      warning_txt: Avertissement
   convert: Convertir
   convert_download: Télécharger
   convert_gtfs: Convertir en GTFS
@@ -550,27 +544,17 @@ fr:
       job:
         create: Démarrer
   history: Historique
-  iev:
-    errors:
-      duplicate_or_missing_data: Donnée manquante ou en double
-      duplicate_parameters: Paramètres fournis en double
-      internal_error: Erreur interne
-      invalid_file_format: Format de fichier invalide
-      invalid_parameters: Paramètres d'action incorrects
-      invalid_request: Requête invalide
-      missing_parameters: Paramètres d'action manquants
-      scheduled_job: Méthode interdite sur un job non terminé
-      unknown_action: Action ou type inconnu
-      unknown_file: Fichier inconnu
-      unknown_job: Numéro de job inconnu
-      unknown_referential: Référentiel inconnu
-      unreadable_parameters: Paramètres non lisibles (format erroné)
   job:
     cancel: Annuler
     convert_from: Conversion de
     destroy:
       confirm: Merci de confirmer la suppression de cet élément
       title: 'Historique de mes validations :'
+    results:
+      download_by:
+        files: Télécharger les résultats de validation par fichiers
+        lines: Télécharger les résultats de validation par lignes
+        tests: Télécharger les résultats de validation par tests
     status:
       pending: En attente
     tab:
