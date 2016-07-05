@@ -555,6 +555,7 @@ fr:
         files: Télécharger les résultats de validation par fichiers
         lines: Télécharger les résultats de validation par lignes
         tests: Télécharger les résultats de validation par tests
+        transport_datas: Télécharger les résultats de validation par données de transport
     status:
       pending: En attente
     tab:
@@ -576,11 +577,15 @@ fr:
     default_view:
       files: Fichiers
       lines: Lignes
+      tests: Tests
+      transport_datas: Données de transport
     delete: Supprimer
     download: Télécharger
     file:
       column: Colonne
       line: Ligne
+    ignored_files: Fichiers ignorés
+    ignored_tests: Tests ignorés
     nonconforming_files: Fichiers non conformes
     nonconforming_lines: Lignes non conformes
     total_results: 'Nombre de résultats :'
