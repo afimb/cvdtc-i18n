@@ -580,7 +580,7 @@ fr:
       tests: Tests
       transport_datas: Données de transport
     delete: Supprimer
-    download: Télécharger
+    download: Télécharger le rapport
     file:
       column: Colonne
       line: Ligne
