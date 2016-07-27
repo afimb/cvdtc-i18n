@@ -613,7 +613,7 @@ fr:
     hints:
       job:
         convert:
-          file: Sélectionner un fichier d'une taille maximale de 80Mo
+          file: Sélectionner un fichier d'une taille maximale de 120Mo
           format: Spécifier le format du jeu de données à convertir
           format_convert: Spécifier le format de conversion
           ignore_end_chars: Lors de la comparaison des noms d’arrêts, cette option permet de ne pas prendre en compte les derniers caractères du nom de l’arrêt (sauf si celui-ci n’a pas assez de caractères pour cela)
@@ -624,7 +624,7 @@ fr:
           time_zone: Spécifier votre fuseau horaire
           url: 'Exemple : http://geo-ws.metzmetropole.fr/services/opendata/gtfs_current.zip'
         index:
-          file: Sélectionner un fichier d'une taille maximale de 80Mo
+          file: Sélectionner un fichier d'une taille maximale de 120Mo
           format: Spécifier le format du jeu de données
           iev_action: 
           url: 'Exemple : http://geo-ws.metzmetropole.fr/services/opendata/gtfs_current.zip'
