@@ -574,13 +574,7 @@ en:
     conform_files: Conforms files
     conform_lines: Conforms lines
     convert_ended_at: Convert ended
-    default_view:
-      files: Files
-      lines: Lines
-      tests: Tests
-      transport_datas: Transport datas
     delete: Delete
-    download: Download
     file:
       column: Column
       line: Line

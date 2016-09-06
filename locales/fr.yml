@@ -574,13 +574,7 @@ fr:
     conform_files: Fichiers conformes
     conform_lines: Lignes conformes
     convert_ended_at: Conversion terminée
-    default_view:
-      files: Fichiers
-      lines: Lignes
-      tests: Tests
-      transport_datas: Données de transport
     delete: Supprimer
-    download: Télécharger le rapport
     file:
       column: Colonne
       line: Ligne
