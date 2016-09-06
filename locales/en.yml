@@ -550,12 +550,6 @@ en:
     destroy:
       confirm: Thank you to confirm the deletion of this element
       title: 'History of my jobs:'
-    results:
-      download_by:
-        files: 
-        lines: 
-        tests: 
-        transport_datas: 
     status:
       pending: Pending
     tab:

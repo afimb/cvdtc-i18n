@@ -550,12 +550,6 @@ fr:
     destroy:
       confirm: Merci de confirmer la suppression de cet élément
       title: 'Historique de mes validations :'
-    results:
-      download_by:
-        files: Télécharger les résultats de validation par fichiers
-        lines: Télécharger les résultats de validation par lignes
-        tests: Télécharger les résultats de validation par tests
-        transport_datas: Télécharger les résultats de validation par données de transport
     status:
       pending: En attente
     tab:
