@@ -586,14 +586,6 @@ en:
     total_results_files: 
     total_results_lines: 
     validation_ended_at: 
-  report_results:
-    icons:
-      title:
-        error_txt: 
-        ignored_txt: 
-        none_txt: 
-        ok_txt: 
-        warning_txt: 
   search_form:
     label:
       search: Search

@@ -586,14 +586,6 @@ fr:
     total_results_files: 'Nombre de fichiers traités :'
     total_results_lines: 'Nombre de lignes traitées :'
     validation_ended_at: Validation terminée
-  report_results:
-    icons:
-      title:
-        error_txt: Erreur
-        ignored_txt: Ignoré
-        none_txt: Absent
-        ok_txt: Ok
-        warning_txt: Avertissement
   search_form:
     label:
       search: Rechercher
